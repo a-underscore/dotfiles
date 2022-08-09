@@ -11,7 +11,7 @@ autoload -Uz colors && colors
 PS1="%{$fg_bold[green]%}%n@%M%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%} %{$fg[green]%}$>%{$reset_color%} "
 
 alias ls='ls --color=auto'
-alias lock="loginctl suspend && i3lock"
+alias lock="loginctl suspend && swaylock"
 alias c="clear"
 alias q="exit"
 alias ff="firefox"

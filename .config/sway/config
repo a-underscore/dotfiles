@@ -22,10 +22,7 @@ set $up k
 set $right l
 set $term alacritty
 set $shell sh
-set $reboot loginctl reboot
-set $poweroff loginctl poweroff 
 set $status $shell ~/.config/sway/status.sh
-set $lock echo lock | $shell
 set $exit swaynag -t warning -m 'Kill?' -b 'Kill' 'swaymsg exit'
 set $launcher bemenu-run -i --fb $bar_bg --ff $font_color --tb $primary --tf $font_color --nb $bar_bg --nf $font_color --sb $primary --sf $font_color --hb $primary --hf $font_color --ab $bar_bg --af $font_color
 #
@@ -102,23 +99,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-
-#
-# Control mode
-#
-
-mode "control" {
-    bindsym $mod+Shift+l exec $lock
-    bindsym $mod+Shift+p exec $poweroff
-    bindsym $mod+Shift+r exec $reboot
-    bindsym $mod+r reload
-    bindsym $mod+e exec $exit
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
-bindsym $mod+t mode "control"
 
 #
 # Bar
