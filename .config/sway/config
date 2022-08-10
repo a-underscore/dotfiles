@@ -31,6 +31,7 @@ set $launcher bemenu-run -i --fb $bar_bg --ff $font_color --tb $primary --tf $fo
 
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
+bindsym $mod+Shift+e exit
 
 floating_modifier $mod normal
 
