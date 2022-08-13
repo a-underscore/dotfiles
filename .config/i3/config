@@ -21,7 +21,6 @@ set $term_id Alacritty
 set $reboot exec --no-startup-id "loginctl reboot"
 set $poweroff exec --no-startup-id "loginctl poweroff"
 set $status ~/.config/i3/status.sh
-set $lock exec --no-startup-id "/home/brendan/.config/i3/lock.sh"
 set $exit exec --no-startup-id i3-msg exit
 set $launcher exec --no-startup-id "/home/brendan/.config/i3/commands.sh"
 
@@ -139,7 +138,7 @@ client.placeholder $primary $primary $font_color
 # Idle
 #
 
-exec --no-startup-id "xidle -timeout 600 -program /home/brendan/.config/i3/lock.sh"
+exec --no-startup-id "xidle -timeout 600 -program /home/brendan/.config/i3/suspend.sh"
 
 #
 # Pipewire
