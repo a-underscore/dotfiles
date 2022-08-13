@@ -2,39 +2,36 @@
 # Constants
 #
 
-set $opacity "e6"
-set $border "#d3d3d3"
-set $bar_bg "#121212"
-set $font_color "#ffffff"
-set $primary "#999999"
-set $primary_unfocused "#333333"
-set $primary_inactive "#666666"
-set $urgent "#ff0000"
-set $bg "moon.png"
-set $pos1 "0" "0"
-set $pos2 "1920" "0"
-set $pos3 "3840" "0"
-set $res "1920x1080@165hz"
+set $border #d3d3d3
+set $uifont pango:DejaVu Sans Mono 12
+set $bg_color #121212
+set $font_color #ffffff
+set $primary #999999
+set $primary_unfocused #333333
+set $primary_inactive #666666
+set $urgent #ff0000
+set $bg /home/brendan/.config/i3/moon.png
 set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
 set $term alacritty
-set $shell sh
-set $status $shell ~/.config/sway/status.sh
-set $exit swaynag -t warning -m 'Kill?' -b 'Kill' 'swaymsg exit'
-set $launcher bemenu-run -i --fb $bar_bg --ff $font_color --tb $primary --tf $font_color --nb $bar_bg --nf $font_color --sb $primary --sf $font_color --hb $primary --hf $font_color --ab $bar_bg --af $font_color
+set $term_id Alacritty
+set $reboot exec --no-startup-id "loginctl reboot"
+set $poweroff exec --no-startup-id "loginctl poweroff"
+set $status ~/.config/i3/status.sh
+set $lock exec --no-startup-id "/home/brendan/.config/i3/lock.sh"
+set $exit exec --no-startup-id i3-msg exit
+set $launcher exec --no-startup-id "/home/brendan/.config/i3/commands.sh"
+
 #
 # Keybinds
 #
 
-bindsym $mod+Return exec $term
-bindsym $mod+Shift+q kill
+bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+Shift+e exit
-
-floating_modifier $mod normal
-
+bindsym $mod+Shift+q kill
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
@@ -81,6 +78,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 bindsym $mod+c focus child 
+bindsym $mod+d $launcher
 
 #
 # Resize mode
@@ -110,13 +108,13 @@ bar {
   font $uifont
 
   status_command while $status; do sleep 1; done
-  
+
   colors {
     statusline $font_color
-    background $bar_bg$opacity
-    focused_workspace $primary$opacity $primary$opacity $font_color
-    active_workspace $primary_inactive $primary_inactive$opacity $font_color
-    inactive_workspace $primary_unfocused$opacity $primary_unfocused$opacity $font_color
+    background $bg_color
+    focused_workspace $primary $primary $font_color
+    active_workspace $primary_inactive $primary_inactive $font_color
+    inactive_workspace $primary_unfocused $primary_unfocused $font_color
   }
 }
 
@@ -124,44 +122,35 @@ bar {
 # Display
 #
 
-output DP-1 pos $pos1
-output DP-2 pos $pos2 res $res
-output DP-3 pos $pos3
-
-output "*" bg $bg fill
+exec --no-startup-id "xrandr --output DisplayPort-1 --primary --mode 1920x1080 --rate 164.92"
+exec_always --no-startup-id "feh --bg-center $bg"
 
 #
 # Border
 #
 
-client.focused $primary$opacity $primary$opacity $font_color
-client.unfocused $primary_unfocused$opacity $primary_unfocused$opacity $font_color
-client.focused_inactive $primary_inactive$opacity $primary_inactive$opacity $font_color
-client.urgent $urgent$opacity $urgent$opacity $font_color
-client.placeholder $primary$opacity $primary$opacity $font_color
+client.focused $primary $primary $font_color
+client.unfocused $primary_unfocused $primary_unfocused $font_color
+client.focused_inactive $primary_inactive $primary_inactive $font_color
+client.urgent $urgent $urgent $font_color
+client.placeholder $primary $primary $font_color
 
 #
-# App launcher
+# Idle
 #
 
-bindsym $mod+d exec $launcher
-
-#
-# Swayidle
-#
-
-exec swayidle -w timeout 600 $lock
+exec --no-startup-id "xidle -timeout 600 -program /home/brendan/.config/i3/lock.sh"
 
 #
 # Pipewire
 #
 
-exec wireplumber
-exec pipewire
-exec pipewire-pulse
+exec --no-startup-id wireplumber
+exec --no-startup-id pipewire
+exec --no-startup-id pipewire-pulse
 
 #
-# Include
+# font
 #
 
-include /etc/sway/config.d/*
+font $uifont

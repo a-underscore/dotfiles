@@ -1,3 +1,3 @@
 if [[ ! $DISPLAY ]]; then
-	sway
+	startx
 fi
