@@ -1,6 +1,3 @@
-window:
-  opacity: .9
-
 schemes:
   colors: &theme
     primary:
