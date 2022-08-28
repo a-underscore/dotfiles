@@ -1,3 +1,3 @@
-if [[ ! $DISPLAY ]]; then
+if [[ ! $DISPLAY ]] && [[ $(tty) == "/dev/tty1" ]]; then
 	startx
 fi
