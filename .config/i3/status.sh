@@ -1,8 +1,8 @@
 #!/bin/sh
 
-cpus="Online CPUs: $(nproc)"
-uptime_formatted=$(uptime -p)
-date_formatted=$(date +'%-d/%-m/%Y %H:%M:%S')
-linux_version=$(uname -r)
+battery=$(acpi -b)
+uptime=$(uptime -p)
+date=$(date +'%-d/%-m/%Y %H:%M:%S')
+version=$(uname -r)
 
-echo "[$cpus]" "[$uptime_formatted]"  "[$linux_version]"  "[$date_formatted]"
+echo "[$battery]" "[$uptime]"  "[$version]"  "[$date]"

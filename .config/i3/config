@@ -149,7 +149,7 @@ exec --no-startup-id pipewire
 exec --no-startup-id pipewire-pulse
 
 #
-# font
+# Font
 #
 
 font $uifont
