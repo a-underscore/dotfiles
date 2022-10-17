@@ -1,4 +1,6 @@
 configuration {
+	sort: true;
+	disable-history: true;
 	modes: "window,drun,run,ssh";
 	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
 	kb-row-down: "Down,Super+j";
