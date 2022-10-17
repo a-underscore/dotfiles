@@ -13,7 +13,7 @@ configuration {
     red:                        #ff0000;
     white: 			#ffffff;
     selected-active-foreground:  var(background);
-    foreground:                  #666666;
+    foreground:                  #999999;
     separatorcolor:              var(foreground);
     urgent-foreground:           var(red);
     alternate-urgent-background: var(background);
