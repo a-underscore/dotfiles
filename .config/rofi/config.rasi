@@ -1,7 +1,7 @@
 configuration {
 	sort: true;
 	disable-history: true;
-	modes: "window,drun,run,ssh";
+	modes: "run,window";
 	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
 	kb-row-down: "Down,Super+j";
 	kb-accept-entry: "Return,KP_Enter";
