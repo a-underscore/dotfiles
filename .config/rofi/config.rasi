@@ -2,10 +2,10 @@ configuration {
 	modes: "window,drun,run,ssh";
 	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
 	kb-row-down: "Down,Super+j";
-	kb-accept-entry: "Super+m,Return,KP_Enter";
-	kb-custom: "Mod+KP_Enter";
+	kb-accept-entry: "Return,KP_Enter";
+	kb-accept-alt: "Control+Return,Control+KP_Enter";
+	kb-accept-custom: "Shift+Return,Shift+KP_Enter";
 	terminal: "alacritty";
-	kb-remove-to-eol: "Super+Shift+e";
 	kb-mode-next: "Shift+Right,Control+Tab,Super+l";
 	kb-mode-previous: "Shift+Left,Control+Shift+Tab,Super+h";
 	kb-remove-char-back: "BackSpace";
