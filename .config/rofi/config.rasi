@@ -12,31 +12,30 @@ configuration {
 * {
     red:                        #ff0000;
     white: 			#ffffff;
-    selected-active-foreground:  var(background);
-    foreground:                  #999999;
-    separatorcolor:              var(foreground);
+    gray:                  	#999999;
+    darkgray:                  #121212;
+    selected-active-background:  var(gray);
+    selected-active-foreground:  var(darkgray);
+    separatorcolor:              var(gray);
     urgent-foreground:           var(red);
-    alternate-urgent-background: var(background);
+    alternate-urgent-background: var(darkgray);
     background-color:            transparent;
-    border-color:                var(foreground);
-    normal-background:           var(background);
+    border-color:                var(gray);
+    normal-background:           var(darkgray);
     selected-urgent-background:  var(red);
-    alternate-active-background: var(background);
+    alternate-active-background: var(darkgray);
     spacing:                     2;
-    grey:                        #999999;
-    alternate-normal-foreground: var(foreground);
-    urgent-background:           var(background);
-    selected-normal-foreground:  var(background);
-    active-foreground:           var(grey);
-    background:                  #121212;
-    selected-active-background:  var(grey);
-    active-background:           var(background);
-    selected-normal-background:  var(foreground);
-    alternate-normal-background: var(background);
-    selected-urgent-foreground:  var(background);
-    normal-foreground:           var(foreground);
+    alternate-normal-foreground: var(gray);
+    urgent-background:           var(darkgray);
+    selected-normal-foreground:  var(darkgray);
+    active-foreground:           var(gray);
+    active-background:           var(darkgray);
+    selected-normal-background:  var(gray);
+    alternate-normal-background: var(darkgray);
+    selected-urgent-foreground:  var(darkgray);
+    normal-foreground:           var(gray);
     alternate-urgent-foreground: var(red);
-    alternate-active-foreground: var(grey);
+    alternate-active-foreground: var(gray);
 }
 element {
     padding: 1px ;
@@ -94,7 +93,7 @@ element-icon {
 }
 window {
     padding:          5;
-    background-color: var(background);
+    background-color: var(darkgray);
     border:           1;
 }
 mainbox {
