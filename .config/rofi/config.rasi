@@ -1,0 +1,179 @@
+configuration {
+	modes: "window,drun,run,ssh";
+	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
+	kb-row-down: "Down,Super+j";
+	kb-accept-entry: "Super+m,Return,KP_Enter";
+	terminal: "mate-terminal";
+	kb-remove-to-eol: "Super+Shift+e";
+	kb-mode-next: "Shift+Right,Control+Tab,Super+l";
+	kb-mode-previous: "Shift+Left,Control+Shift+Tab,Super+h";
+	kb-remove-char-back: "BackSpace";
+}
+* {
+    red:                        #ff0000;
+    white: 			#ffffff;
+    selected-active-foreground:  var(background);
+    foreground:                  #666666;
+    separatorcolor:              var(foreground);
+    urgent-foreground:           var(red);
+    alternate-urgent-background: var(background);
+    background-color:            transparent;
+    border-color:                var(foreground);
+    normal-background:           var(background);
+    selected-urgent-background:  var(red);
+    alternate-active-background: var(background);
+    spacing:                     2;
+    grey:                        #999999;
+    alternate-normal-foreground: var(foreground);
+    urgent-background:           var(background);
+    selected-normal-foreground:  var(background);
+    active-foreground:           var(grey);
+    background:                  #121212;
+    selected-active-background:  var(grey);
+    active-background:           var(background);
+    selected-normal-background:  var(foreground);
+    alternate-normal-background: var(background);
+    selected-urgent-foreground:  var(background);
+    normal-foreground:           var(foreground);
+    alternate-urgent-foreground: var(red);
+    alternate-active-foreground: var(grey);
+}
+element {
+    padding: 1px ;
+    cursor:  pointer;
+    spacing: 5px ;
+    border:  0;
+}
+element normal.normal {
+    background-color: var(normal-background);
+    text-color:       var(white);
+}
+element normal.urgent {
+    background-color: var(urgent-background);
+    text-color:       var(white);
+}
+element normal.active {
+    background-color: var(active-background);
+    text-color:       var(white);
+}
+element selected.normal {
+    background-color: var(selected-normal-background);
+    text-color:       var(white);
+}
+element selected.urgent {
+    background-color: var(selected-urgent-background);
+    text-color:       var(white);
+}
+element selected.active {
+    background-color: var(selected-active-background);
+    text-color:       var(white);
+}
+element alternate.normal {
+    background-color: var(alternate-normal-background);
+    text-color:       var(white);
+}
+element alternate.urgent {
+    background-color: var(alternate-urgent-background);
+    text-color:       var(white);
+}
+element alternate.active {
+    background-color: var(alternate-active-background);
+    text-color:       var(white);
+}
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: transparent;
+    size:             1.0000em ;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+window {
+    padding:          5;
+    background-color: var(background);
+    border:           1;
+}
+mainbox {
+    padding: 0;
+    border:  0;
+}
+message {
+    padding:      1px ;
+    border-color: var(separatorcolor);
+    border:       2px dash 0px 0px ;
+}
+textbox {
+    text-color: var(white);
+}
+listview {
+    padding:      2px 0px 0px ;
+    scrollbar:    true;
+    border-color: var(separatorcolor);
+    spacing:      2px ;
+    fixed-height: 0;
+    border:       2px dash 0px 0px ;
+}
+scrollbar {
+    width:        4px ;
+    padding:      0;
+    handle-width: 8px ;
+    border:       0;
+    handle-color: var(normal-foreground);
+}
+sidebar {
+    border-color: var(separatorcolor);
+    border:       2px dash 0px 0px ;
+}
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: var(white);
+}
+button selected {
+    background-color: var(selected-normal-background);
+    text-color:       var(white);
+}
+num-filtered-rows {
+    expand:     false;
+    text-color: var(white);
+}
+num-rows {
+    expand:     false;
+    text-color: var(white);
+}
+textbox-num-sep {
+    expand:     false;
+    str:        "/";
+    text-color: var(white);
+}
+inputbar {
+    padding:    1px ;
+    spacing:    0px ;
+    text-color: var(white);
+    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+case-indicator {
+    spacing:    0;
+    text-color: var(white);
+}
+entry {
+    text-color:        var(white);
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: var(white);
+    placeholder:       "Type to filter";
+}
+prompt {
+    spacing:    0;
+    text-color: var(white);
+}
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    expand:     false;
+    str:        ":";
+    text-color: inherit;
+}
