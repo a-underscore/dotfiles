@@ -3,7 +3,8 @@ configuration {
 	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
 	kb-row-down: "Down,Super+j";
 	kb-accept-entry: "Super+m,Return,KP_Enter";
-	terminal: "mate-terminal";
+	kb-custom: "Mod+KP_Enter";
+	terminal: "alacritty";
 	kb-remove-to-eol: "Super+Shift+e";
 	kb-mode-next: "Shift+Right,Control+Tab,Super+l";
 	kb-mode-previous: "Shift+Left,Control+Shift+Tab,Super+h";
