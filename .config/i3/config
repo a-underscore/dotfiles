@@ -2,7 +2,6 @@
 # Constants
 #
 
-set $border #d3d3d3
 set $uifont pango:DejaVu Sans Mono 12
 set $bg_color #121212
 set $font_color #ffffff
@@ -79,6 +78,8 @@ bindsym $mod+a focus parent
 bindsym $mod+c focus child 
 bindsym $mod+d $launcher
 
+floating_modifier $mod
+
 #
 # Resize mode
 #
@@ -128,11 +129,11 @@ exec_always --no-startup-id "feh --bg-center $bg"
 # Border
 #
 
-client.focused $primary $primary $font_color
-client.unfocused $primary_unfocused $primary_unfocused $font_color
-client.focused_inactive $primary_inactive $primary_inactive $font_color
-client.urgent $urgent $urgent $font_color
-client.placeholder $primary $primary $font_color
+client.focused $primary $primary $font_color $primary
+client.unfocused $primary_unfocused $primary_unfocused $font_color $primary_unfocused
+client.focused_inactive $primary_inactive $primary_inactive $font_color $primary_inactive
+client.urgent $urgent $urgent $font_color $font_color $urgent
+client.placeholder $primary $primary $font_color $font_color $primary
 
 #
 # Idle
