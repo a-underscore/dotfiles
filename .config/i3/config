@@ -16,8 +16,6 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $reboot exec --no-startup-id "loginctl reboot"
-set $poweroff exec --no-startup-id "loginctl poweroff"
 set $status /home/brendan/.config/i3/status.sh
 set $exit exec --no-startup-id i3-msg exit
 set $launcher exec --no-startup-id "rofi -show run"
