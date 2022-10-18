@@ -7,6 +7,7 @@ configuration {
 	kb-accept-entry: "Return,KP_Enter";
 	kb-accept-alt: "Control+Return,Control+KP_Enter";
 	kb-accept-custom: "Shift+Return,Shift+KP_Enter";
+	kb-accept-custom-alt: "Control+Shift+Return,Control+Shift+KP_Enter";
 	terminal: "alacritty";
 	kb-mode-next: "Shift+Right,Control+Tab,Super+l";
 	kb-mode-previous: "Shift+Left,Control+Shift+Tab,Super+h";
