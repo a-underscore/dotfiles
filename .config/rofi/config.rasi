@@ -2,6 +2,7 @@ configuration {
 	sort: true;
 	disable-history: true;
 	modes: "run,window";
+	font: "RobotoMono 12";
 	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
 	kb-row-down: "Down,Super+j";
 	kb-accept-entry: "Return,KP_Enter";

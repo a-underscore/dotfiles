@@ -6,3 +6,10 @@ schemes:
       bright_foreground: "#ffffff"
 
 colors: *theme
+
+font:
+  normal:
+    family:
+      RobotoMono
+    style: Regular
+    size: 12

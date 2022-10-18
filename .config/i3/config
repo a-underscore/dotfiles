@@ -2,7 +2,7 @@
 # Constants
 #
 
-set $uifont pango:DejaVu Sans Mono 12
+set $uifont pango:RobotoMono 12
 set $bg_color #121212
 set $font_color #ffffff
 set $primary #999999
