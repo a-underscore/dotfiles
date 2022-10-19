@@ -1,8 +1,8 @@
 colorscheme theme
 
-set mouse=
 set number
 set relativenumber
+set mouse=
 
 autocmd VimEnter * COQnow -s
 
