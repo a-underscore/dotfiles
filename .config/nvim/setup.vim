@@ -1,5 +1,6 @@
 colorscheme theme
 
+set mouse=
 set number
 set relativenumber
 
