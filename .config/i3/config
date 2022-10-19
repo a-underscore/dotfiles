@@ -72,8 +72,8 @@ bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
-bindsym $mod+o focus parent
-bindsym $mod+p focus child 
+bindsym $mod+p focus parent
+bindsym $mod+o focus child 
 bindsym $mod+d $launcher
 bindsym $mod+a $switcher
 
