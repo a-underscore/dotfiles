@@ -3,6 +3,7 @@
 #
 
 set $uifont pango:RobotoMono 12
+set $thickness 5
 set $bg_color #121212
 set $font_color #ffffff
 set $primary #999999
@@ -153,3 +154,5 @@ exec --no-startup-id pipewire-pulse
 #
 
 font $uifont
+
+new_window pixel $thickness

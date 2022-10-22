@@ -99,7 +99,7 @@ element-icon {
 window {
     padding:          5;
     background-color: var(darkgray);
-    border:           1;
+    border:           5px;
 }
 mainbox {
     padding: 0;
