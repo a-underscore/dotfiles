@@ -29,7 +29,6 @@ configuration {
     normal-background:           var(darkgray);
     selected-urgent-background:  var(red);
     alternate-active-background: var(darkergray);
-    spacing:                     0;
     urgent-background:           var(darkgray);
     active-background:           var(darkgray);
     selected-normal-background:  var(gray);
