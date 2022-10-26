@@ -2,6 +2,7 @@ colorscheme theme
 
 set number
 set relativenumber
+set nowrap
 set mouse=
 
 autocmd VimEnter * COQnow -s
