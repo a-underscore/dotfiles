@@ -10,14 +10,14 @@ set $primary #999999
 set $primary_unfocused #333333
 set $primary_inactive #666666
 set $urgent #ff0000
-set $bg /home/brendan/.config/i3/moon.png
+set $bg ~/.config/i3/moon.png
 set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
 set $term alacritty
-set $status /home/brendan/.config/i3/status.sh
+set $status ~/.config/i3/status.sh
 set $exit exec --no-startup-id i3-msg exit
 set $launcher exec --no-startup-id "rofi -show run"
 set $switcher exec --no-startup-id "rofi -show window"
@@ -142,7 +142,7 @@ smart_borders on
 # Idle
 #
 
-exec --no-startup-id "xidle -timeout 600 -program /home/brendan/.config/i3/suspend.sh"
+exec --no-startup-id "xidle -timeout 600 -program ~/.config/i3/suspend.sh"
 
 #
 # Pipewire
