@@ -16,6 +16,7 @@ configuration {
 }
 * {
     red:                         #ff0000;
+    darkred:                     #880000;
     white: 			 #ffffff;
     gray:                  	 #999999;
     darkgray:                  	 #121212;
@@ -29,7 +30,7 @@ configuration {
     normal-background:           var(darkgray);
     selected-urgent-background:  var(red);
     alternate-active-background: var(darkergray);
-    urgent-background:           var(darkgray);
+    urgent-background:           var(darkred);
     active-background:           var(darkgray);
     selected-normal-background:  var(gray);
     alternate-normal-background: var(darkgray);
