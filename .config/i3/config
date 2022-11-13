@@ -3,7 +3,7 @@
 #
 
 set $uifont pango:RobotoMono 12
-set $thickness 5
+set $thickness 3
 set $bg_color #121212
 set $font_color #ffffff
 set $primary #999999
@@ -136,7 +136,6 @@ client.urgent $urgent $urgent $font_color $font_color $urgent
 client.placeholder $primary $primary $font_color $font_color $primary
 
 default_border pixel $thickness
-smart_borders on
 
 #
 # Idle

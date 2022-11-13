@@ -21,6 +21,7 @@ configuration {
     gray:                  	 #999999;
     darkgray:                  	 #121212;
     darkergray:                  #666666;
+    border-thickness:            3px;
     txtcolor: 			 var(white);
     selected-active-background:  var(gray);
     separatorcolor:              var(gray);
@@ -89,10 +90,10 @@ element-icon {
 window {
     padding:          0;
     background-color: var(normal-background);
-    border:           5px;
+    border:           var(border-thickness);
 }
 mainbox {
-    padding: 5px;
+    padding: 0;
     border:  0;
 }
 message {
