@@ -22,9 +22,9 @@ configuration {
     darkgray:                  	 #121212;
     darkergray:                  #666666;
     border-thickness:            3px;
-    txtcolor: 			 var(white);
+    txt-color: 			 var(white);
     selected-active-background:  var(gray);
-    separatorcolor:              var(gray);
+    separator-color:              var(gray);
     alternate-urgent-background: var(darkgray);
     background-color:            transparent;
     border-color:                var(gray);
@@ -43,39 +43,39 @@ element {
 }
 element normal.normal {
     background-color: var(normal-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element normal.urgent {
     background-color: var(urgent-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element normal.active {
     background-color: var(active-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element selected.normal {
     background-color: var(selected-normal-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element selected.urgent {
     background-color: var(selected-urgent-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element selected.active {
     background-color: var(selected-active-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element alternate.normal {
     background-color: var(alternate-normal-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element alternate.urgent {
     background-color: var(alternate-urgent-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element alternate.active {
     background-color: var(alternate-active-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 element-text {
     background-color: transparent;
@@ -88,7 +88,7 @@ element-icon {
     text-color:       inherit;
 }
 window {
-    padding:          0;
+    padding:          var(border-thickness);
     background-color: var(normal-background);
     border:           var(border-thickness);
 }
@@ -98,60 +98,62 @@ mainbox {
 }
 message {
     padding:      0;
-    border-color: var(separatorcolor);
+    border-color: var(separator-color);
     border:       0;
 }
 textbox {
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
 }
 listview {
     scrollbar:    false;
+    padding: 0;
     border: 0;
+    border-color: var(separator-color);
 }
 sidebar {
-    border-color: var(separatorcolor);
+    border-color: var(separator-color);
     border:       0;
 }
 button {
     spacing:    0;
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
 }
 button selected {
     background-color: var(selected-normal-background);
-    text-color:       var(txtcolor);
+    text-color:       var(txt-color);
 }
 num-filtered-rows {
     expand:     false;
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
 }
 num-rows {
     expand:     false;
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
 }
 textbox-num-sep {
     expand:     false;
     str:        "/";
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
 }
 inputbar {
     padding:    0;
     spacing:    0;
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
     children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
 }
 case-indicator {
     spacing:    0;
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
 }
 entry {
-    text-color:        var(txtcolor);
+    text-color:        var(txt-color);
     spacing:           0;
-    placeholder-color: var(txtcolor);
+    placeholder-color: var(txt-color);
     placeholder:       "";
 }
 prompt {
     spacing:    0;
-    text-color: var(txtcolor);
+    text-color: var(txt-color);
 }
 textbox-prompt-colon {
     margin:     0;
