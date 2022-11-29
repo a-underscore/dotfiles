@@ -1,4 +1,6 @@
 setopt aliases
+setopt extended_glob
+
 unsetopt beep
 
 bindkey -v
