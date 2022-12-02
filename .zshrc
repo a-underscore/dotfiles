@@ -1,6 +1,5 @@
 setopt appendhistory
 setopt aliases
-setopt chaselinks
 setopt completealiases
 setopt complete_in_word
 setopt extended_glob
@@ -8,7 +7,6 @@ setopt extended_history
 setopt hist_ignore_dups
 setopt hist_expire_dups_first
 setopt hist_ignore_space
-setopt hist_verify
 
 unsetopt beep
 
