@@ -11,8 +11,8 @@ setopt hist_ignore_space
 unsetopt beep
 
 HISTFILE=~/.zhistory
-HISTSIZE=1000
-SAVEHIST=$HISTSIZE
+SAVEHIST=1000
+HISTSIZE=$SAVEHIST
 
 bindkey -v
 
