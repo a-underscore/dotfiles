@@ -4,7 +4,11 @@ set number
 set relativenumber
 set nowrap
 set mouse=
-set signcolumn=yes
-set updatetime=300
+
+autocmd VimEnter * COQnow -s
+
+call neomake#configure#automake('nrwi')
+
+let g:neomake_open_list = 2
 
 let NERDTreeMinimalUI = 1
