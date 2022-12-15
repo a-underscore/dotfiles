@@ -4,6 +4,7 @@ set number
 set relativenumber
 set nowrap
 set mouse=
+set signcolumn=yes
 
 call neomake#configure#automake('nrwi')
 
