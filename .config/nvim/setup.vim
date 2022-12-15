@@ -5,8 +5,6 @@ set relativenumber
 set nowrap
 set mouse=
 
-autocmd VimEnter * COQnow -s
-
 call neomake#configure#automake('nrwi')
 
 let g:neomake_open_list = 2

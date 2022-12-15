@@ -127,7 +127,7 @@ bar {
 # Display
 #
 
-exec --no-startup-id "xrandr --output DisplayPort-0 --primary --mode 1920x1080 --rate 165"
+exec --no-startup-id "xrandr --output DisplayPort-1 --primary --mode 1920x1080 --rate 165"
 exec_always --no-startup-id "feh --bg-center $bg"
 
 #
