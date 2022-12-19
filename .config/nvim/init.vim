@@ -1,9 +1,6 @@
 "Plugins"
 source ~/.config/nvim/plugs.vim
 
-"Keybinds"
-source ~/.config/nvim/kbs.vim
-
 colorscheme theme
 
 set number
