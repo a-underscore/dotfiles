@@ -12,8 +12,7 @@ let zinc_gray_600 = "#7a7a7a"
 let zinc_gray_500 = "#787878"
 let zinc_gray_200 = "#b0b0b0"
 
-let cyan = "#00af87"
-let white = "#ffffff"
+let teal = "#00af87"
 
 let cterm_gray_900 = 233
 let cterm_gray_800 = 239
@@ -24,8 +23,7 @@ let cterm_gray_400 = 252
 
 let cterm_zinc_gray_900 = 59
 
-let cterm_cyan = 36
-let cterm_white = 231
+let cterm_teal = 36
 
 highlight clear
 
@@ -33,31 +31,32 @@ syntax reset
 
 let g:colors_name = "theme"
 
+exec "hi Normal guifg=".gray_400 ." guibg=".gray_900
 exec "hi Normal ctermfg=".cterm_gray_400." ctermbg=".cterm_gray_900
 exec "hi Comment guifg=".gray_700
 exec "hi Comment ctermfg=".cterm_gray_800
-exec "hi Constant guifg=".cyan
-exec "hi Constant ctermfg=".cterm_cyan
+exec "hi Constant guifg=".teal
+exec "hi Constant ctermfg=".cterm_teal
 exec "hi Character guifg=".zinc_gray_500
 exec "hi Character ctermfg=".cterm_gray_700
-exec "hi Identifier guifg=".white." gui=none"
-exec "hi Identifier ctermfg=".cterm_white." cterm=none"
+exec "hi Identifier guifg=".gray_400." gui=none"
+exec "hi Identifier ctermfg=".cterm_gray_400." cterm=none"
 exec "hi Statement guifg=".zinc_gray_200
 exec "hi Statement ctermfg=".cterm_gray_500
-exec "hi PreProc guifg=".cyan
-exec "hi PreProc ctermfg=".cterm_cyan
+exec "hi PreProc guifg=".teal
+exec "hi PreProc ctermfg=".cterm_teal
 exec "hi Type guifg=".zinc_gray_600
 exec "hi Type ctermfg=".cterm_gray_700
 exec "hi Special guifg=".zinc_gray_500
 exec "hi Special ctermfg=".cterm_gray_700
 exec "hi Underlined guifg=".zinc_gray_200
 exec "hi Underlined ctermfg=".cterm_gray_500
-exec "hi Error guifg=".cyan." guibg=".gray_800
-exec "hi Error ctermfg=".cterm_cyan." ctermbg=".cterm_zinc_gray_900
-exec "hi Todo guifg=".cyan." guibg=".gray_800
-exec "hi Todo ctermfg=".cterm_cyan." ctermbg=".cterm_zinc_gray_900
-exec "hi Function guifg=".cyan
-exec "hi Function ctermfg=".cterm_cyan
+exec "hi Error guifg=".teal." guibg=".gray_800
+exec "hi Error ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
+exec "hi Todo guifg=".teal." guibg=".gray_800
+exec "hi Todo ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
+exec "hi Function guifg=".teal
+exec "hi Function ctermfg=".cterm_teal
 exec "hi ColorColumn guibg=".gray_800
 exec "hi ColorColumn ctermbg=".cterm_zinc_gray_900
 exec "hi Conceal guifg=".gray_700
@@ -70,26 +69,26 @@ exec "hi CursorLine guibg=".zinc_gray_900
 exec "hi CursorLine ctermbg=".cterm_zinc_gray_900." cterm=none"
 exec "hi Directory guifg=".zinc_gray_200
 exec "hi Directory ctermfg=".cterm_gray_500
-exec "hi DiffAdd guifg=".cyan." guibg=".gray_800
-exec "hi DiffAdd ctermfg=".cterm_cyan." ctermbg=".cterm_zinc_gray_900
-exec "hi DiffChange guifg=".white." guibg=".gray_800
-exec "hi DiffChange ctermfg=".cterm_white." ctermbg=".cterm_zinc_gray_900
-exec "hi DiffDelete guifg=".cyan." guibg=".gray_800
-exec "hi DiffDelete ctermfg=".cterm_cyan." ctermbg=".cterm_zinc_gray_900
-exec "hi DiffText guifg=".white." guibg=".gray_700
-exec "hi DiffText ctermfg=".cterm_white." ctermbg=".cterm_gray_800
-exec "hi ErrorMsg guifg=".gray_200." guibg=".cyan
-exec "hi ErrorMsg ctermfg=".cterm_white." ctermbg=".cterm_cyan
-exec "hi VertSplit guifg=".gray_900." guibg=".zinc_gray_900
-exec "hi VertSplit ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_700
+exec "hi DiffAdd guifg=".teal." guibg=".gray_800
+exec "hi DiffAdd ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
+exec "hi DiffChange guifg=".gray_400." guibg=".gray_800
+exec "hi DiffChange ctermfg=".cterm_gray_400." ctermbg=".cterm_zinc_gray_900
+exec "hi DiffDelete guifg=".teal." guibg=".gray_800
+exec "hi DiffDelete ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
+exec "hi DiffText guifg=".gray_400." guibg=".gray_700
+exec "hi DiffText ctermfg=".cterm_gray_400." ctermbg=".cterm_gray_800
+exec "hi ErrorMsg guifg=".gray_200." guibg=".teal
+exec "hi ErrorMsg ctermfg=".cterm_gray_400." ctermbg=".cterm_teal
+exec "hi VertSplit guifg=".gray_400." guibg=".gray_400
+exec "hi VertSplit ctermfg=".cterm_gray_400." ctermbg=".cterm_gray_400
 exec "hi Folded guifg=".gray_500." guibg=".gray_800
 exec "hi Folded ctermfg=".cterm_gray_600." ctermbg=".cterm_zinc_gray_900
 exec "hi FoldColumn guifg=".gray_500." guibg=".gray_800
 exec "hi FoldColumn ctermfg=".cterm_gray_600." ctermbg=".cterm_zinc_gray_900
 exec "hi SignColumn guibg=".gray_900
 exec "hi SignColumn ctermbg=".cterm_gray_900
-exec "hi IncSearch guifg=".gray_900." guibg=".white
-exec "hi IncSearch ctermfg=".cterm_gray_900." ctermbg=".cterm_white
+exec "hi IncSearch guifg=".gray_900." guibg=".gray_400
+exec "hi IncSearch ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_400
 exec "hi LineNr guifg=".gray_800." guibg=".gray_900
 exec "hi LineNr ctermfg=".cterm_zinc_gray_900." ctermbg=".cterm_gray_900
 exec "hi CursorLineNr guifg=".gray_600." guibg=".gray_800
@@ -104,40 +103,40 @@ exec "hi Pmenu guifg=".gray_300." guibg=".gray_800
 exec "hi Pmenu ctermfg=".cterm_gray_400." ctermbg=".cterm_zinc_gray_900
 exec "hi PmenuSel guifg=".zinc_gray_500." guibg=".gray_800
 exec "hi PmenuSel ctermfg=".cterm_gray_700." ctermbg=".cterm_zinc_gray_900
-exec "hi PmenuSbar guifg=".cyan." guibg=".gray_800
-exec "hi PmenuSbar ctermfg=".cterm_cyan." ctermbg=".cterm_zinc_gray_900
-exec "hi PmenuThumb guifg=".cyan." guibg=".gray_700
-exec "hi PmenuThumb ctermfg=".cterm_cyan." ctermbg=".cterm_gray_800
+exec "hi PmenuSbar guifg=".teal." guibg=".gray_800
+exec "hi PmenuSbar ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
+exec "hi PmenuThumb guifg=".teal." guibg=".gray_700
+exec "hi PmenuThumb ctermfg=".cterm_teal." ctermbg=".cterm_gray_800
 exec "hi Question guifg=".gray_200." guibg=".gray_800
-exec "hi Question ctermfg=".cterm_white." ctermbg=".cterm_zinc_gray_900
-exec "hi Search guifg=".gray_900." guibg=".white
-exec "hi Search ctermfg=".cterm_gray_900." ctermbg=".cterm_white
+exec "hi Question ctermfg=".cterm_gray_400." ctermbg=".cterm_zinc_gray_900
+exec "hi Search guifg=".gray_900." guibg=".gray_400
+exec "hi Search ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_400
 exec "hi SpecialKey guifg=".zinc_gray_600." guibg=".gray_900
 exec "hi SpecialKey ctermfg=".cterm_gray_700." ctermbg=".cterm_gray_900
-exec "hi SpellBad guifg=".cyan
-exec "hi SpellBad ctermfg=".cterm_cyan." ctermbg=NONE cterm=undercurl"
-exec "hi SpellCap guifg=".white
-exec "hi SpellCap ctermfg=".cterm_white." ctermbg=NONE cterm=undercurl"
+exec "hi SpellBad guifg=".teal
+exec "hi SpellBad ctermfg=".cterm_teal." ctermbg=NONE cterm=undercurl"
+exec "hi SpellCap guifg=".gray_400
+exec "hi SpellCap ctermfg=".cterm_gray_400." ctermbg=NONE cterm=undercurl"
 exec "hi SpellLocal guifg=".zinc_gray_500
 exec "hi SpellLocal ctermfg=".cterm_gray_700
-exec "hi SpellRare guifg=".cyan
-exec "hi SpellRare ctermfg=".cterm_cyan
-exec "hi StatusLine guifg=".gray_500." guibg=".gray_800." gui=none"
-exec "hi StatusLine ctermfg=".cterm_gray_600." ctermbg=".cterm_zinc_gray_900." cterm=none"
+exec "hi SpellRare guifg=".teal
+exec "hi SpellRare ctermfg=".cterm_teal
+exec "hi StatusLine guifg=".gray_400." guibg=".gray_800." gui=none"
+exec "hi StatusLine ctermfg=".cterm_gray_400." ctermbg=".cterm_zinc_gray_900." cterm=none"
 exec "hi TabLine guifg=".gray_400." guibg=".gray_800
-exec "hi TabLine ctermfg=".cterm_gray_500." ctermbg=".cterm_zinc_gray_900
+exec "hi TabLine ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_400
 exec "hi TabLineFill guibg=".gray_800
 exec "hi TabLineFill ctermbg=".cterm_zinc_gray_900
-exec "hi TabLineSel guifg=".gray_300." guibg=".gray_900
-exec "hi TabLineSel ctermfg=".cterm_gray_400." ctermbg=".cterm_gray_900
+exec "hi TabLineSel guifg=".gray_300." guibg=".gray_800
+exec "hi TabLineSel ctermfg=".cterm_gray_400." ctermbg=".cterm_zinc_gray_900
 exec "hi Title guifg=".zinc_gray_200
 exec "hi Title ctermfg=".cterm_gray_500
 exec "hi Visual guibg=".gray_800
 exec "hi Visual ctermbg=".cterm_zinc_gray_900
-exec "hi VisualNOS guifg=".cyan." guibg=".gray_800
-exec "hi VisualNOS ctermfg=".cterm_cyan." ctermbg=".cterm_zinc_gray_900
-exec "hi WarningMsg guifg=".cyan
-exec "hi WarningMsg ctermfg=".cterm_cyan
+exec "hi VisualNOS guifg=".teal." guibg=".gray_800
+exec "hi VisualNOS ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
+exec "hi WarningMsg guifg=".teal
+exec "hi WarningMsg ctermfg=".cterm_teal
 exec "hi WildMenu guifg=".zinc_gray_500." guibg=".gray_800
 exec "hi WildMenu ctermfg=".cterm_gray_700." ctermbg=".cterm_zinc_gray_900
 
@@ -145,5 +144,5 @@ for hl in getcompletion("DevIcon", "highlight")
     execute "hi ".hl." guifg=".gray_500." ctermfg=".cterm_gray_500
 endfor
 
-unlet gray_900 gray_800 gray_700 gray_600 gray_500 gray_400 gray_300 gray_200 cyan white zinc_gray_500 zinc_gray_200 zinc_gray_600
-unlet cterm_gray_900 cterm_zinc_gray_900 cterm_gray_800 cterm_gray_700 cterm_gray_600 cterm_gray_500 cterm_gray_400 cterm_white cterm_cyan
+unlet gray_900 gray_800 gray_700 gray_600 gray_500 gray_400 gray_300 gray_200 teal zinc_gray_500 zinc_gray_200 zinc_gray_600
+unlet cterm_gray_900 cterm_zinc_gray_900 cterm_gray_800 cterm_gray_700 cterm_gray_600 cterm_gray_500 cterm_gray_400 cterm_teal

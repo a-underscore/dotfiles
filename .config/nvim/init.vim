@@ -1,4 +1,3 @@
-"Plugins"
 source ~/.config/nvim/plugs.vim
 
 colorscheme theme
@@ -12,10 +11,6 @@ set autowrite
 
 lua << EOF
 
-require('tabline').setup({
-    show_index = true,
-    show_modify = true,
-    modify_indicator = '[+]',
-})
+require('tabline').setup({})
 
 EOF
