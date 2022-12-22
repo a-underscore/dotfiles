@@ -34,7 +34,6 @@ syntax reset
 let g:colors_name = "theme"
 
 exec "hi Normal ctermfg=".cterm_gray_400." ctermbg=".cterm_gray_900
-
 exec "hi Comment guifg=".gray_700
 exec "hi Comment ctermfg=".cterm_gray_800
 exec "hi Constant guifg=".cyan
@@ -59,35 +58,6 @@ exec "hi Todo guifg=".cyan." guibg=".gray_800
 exec "hi Todo ctermfg=".cterm_cyan." ctermbg=".cterm_zinc_gray_900
 exec "hi Function guifg=".cyan
 exec "hi Function ctermfg=".cterm_cyan
-
-exec "hi GitGutterAdd guifg=".cyan
-exec "hi GitGutterAdd ctermfg=".cterm_cyan
-exec "hi GitGutterChange guifg=".white
-exec "hi GitGutterChange ctermfg=".cterm_white
-exec "hi GitGutterChangeDelete guifg=".white
-exec "hi GitGutterChangeDelete ctermfg=".cterm_white
-exec "hi GitGutterDelete guifg=".cyan
-exec "hi GitGutterDelete ctermfg=".cterm_cyan
-
-exec "hi gitcommitComment guifg=".gray_600
-exec "hi gitcommitComment ctermfg=".cterm_gray_700
-exec "hi gitcommitOnBranch guifg=".gray_600
-exec "hi gitcommitOnBranch ctermfg=".cterm_gray_700
-exec "hi gitcommitHeader guifg=".gray_400
-exec "hi gitcommitHeader ctermfg=".cterm_gray_500
-exec "hi gitcommitHead guifg=".gray_600
-exec "hi gitcommitHead ctermfg=".cterm_gray_700
-exec "hi gitcommitSelectedType guifg=".cyan
-exec "hi gitcommitSelectedType ctermfg=".cterm_cyan
-exec "hi gitcommitSelectedFile guifg=".cyan
-exec "hi gitcommitSelectedFile ctermfg=".cterm_cyan
-exec "hi gitcommitDiscardedType guifg=".white
-exec "hi gitcommitDiscardedType ctermfg=".cterm_white
-exec "hi gitcommitDiscardedFile guifg=".white
-exec "hi gitcommitDiscardedFile ctermfg=".cterm_white
-exec "hi gitcommitUntrackedFile guifg=".cyan
-exec "hi gitcommitUntrackedFile ctermfg=".cterm_cyan
-
 exec "hi ColorColumn guibg=".gray_800
 exec "hi ColorColumn ctermbg=".cterm_zinc_gray_900
 exec "hi Conceal guifg=".gray_700
@@ -170,37 +140,6 @@ exec "hi WarningMsg guifg=".cyan
 exec "hi WarningMsg ctermfg=".cterm_cyan
 exec "hi WildMenu guifg=".zinc_gray_500." guibg=".gray_800
 exec "hi WildMenu ctermfg=".cterm_gray_700." ctermbg=".cterm_zinc_gray_900
-
-exec "hi NERDTreeExecFile guifg=".zinc_gray_500
-exec "hi NERDTreeExecFile ctermfg=".cterm_gray_700
-exec "hi NERDTreeDirSlash guifg=".zinc_gray_200
-exec "hi NERDTreeDirSlash ctermfg=".cterm_gray_500
-exec "hi NERDTreeCWD guifg=".cyan
-exec "hi NERDTreeCWD ctermfg=".cterm_cyan
-
-exec "hi NvimTreeExecFile guifg=".zinc_gray_500
-exec "hi NvimTreeExecFile ctermfg=".cterm_gray_700
-exec "hi NvimTreeFolderIcon guifg=".cyan
-exec "hi NvimTreeIndentMarker guifg=".gray_300
-exec "hi NvimTreeRootFolder guifg=".zinc_gray_500
-
-exec "hi TSInclude guifg=".gray_600
-exec "hi TSKeyword guifg=".gray_500
-exec "hi TSVariable guifg=".gray_300
-exec "hi TSPunctDelimiter guifg=".gray_600
-exec "hi TSPunctSpecial guifg=".cyan
-"exec "hi TSPunctBracket guifg=".gray_600
-exec "hi TSTypeBuiltin guifg=".gray_600
-exec "hi TSTag guifg=".gray_600
-"exec "hi TSTagDelimiter guifg=".gray_400
-exec "hi TSConstructor guifg=".gray_200
-exec "hi TSProperty guifg=".gray_300
-exec "hi TSMethod guifg=".gray_200
-exec "hi TSKeywordReturn guifg=".white
-exec "hi TSKeywordFunction guifg=".gray_500
-exec "hi TSFunction guifg=".white
-exec "hi TSNone guifg=".gray_400
-"exec "hi TSType guifg=".gray_400
 
 for hl in getcompletion("DevIcon", "highlight")
     execute "hi ".hl." guifg=".gray_500." ctermfg=".cterm_gray_500

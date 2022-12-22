@@ -8,6 +8,7 @@ set relativenumber
 set nowrap
 set mouse=
 set autoread
+set autowrite
 
 lua << EOF
 
