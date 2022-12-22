@@ -10,6 +10,7 @@ set cursorline
 set autoread
 set autowrite
 set guifont="pango:RobotoMono 12"
+set completeopt=menu,menuone,preview,noselect,noinsert
 
 lua << EOF
 

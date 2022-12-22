@@ -47,10 +47,10 @@ exec "hi CursorLineNr cterm=none ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gra
 exec "hi MatchParen ctermbg=".cterm_gray_800
 exec "hi MoreMsg ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_700
 exec "hi NonText ctermfg=".cterm_zinc_gray_900." ctermbg=".cterm_gray_900
-exec "hi Pmenu ctermfg=".cterm_gray_400." ctermbg=".cterm_zinc_gray_900
-exec "hi PmenuSel ctermfg=".cterm_gray_700." ctermbg=".cterm_zinc_gray_900
+exec "hi Pmenu ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_400
+exec "hi PmenuSel ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
 exec "hi PmenuSbar ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
-exec "hi PmenuThumb ctermfg=".cterm_teal." ctermbg=".cterm_gray_800
+exec "hi PmenuThumb ctermfg=".cterm_teal." ctermbg=".cterm_teal
 exec "hi Question ctermfg=".cterm_gray_400." ctermbg=".cterm_zinc_gray_900
 exec "hi Search ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_400
 exec "hi SpecialKey ctermfg=".cterm_gray_700." ctermbg=".cterm_gray_900
@@ -63,9 +63,6 @@ exec "hi TabLine ctermfg=".cterm_gray_900." ctermbg=".cterm_gray_400
 exec "hi TabLineFill ctermbg=".cterm_zinc_gray_900
 exec "hi TabLineSel ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
 exec "hi Title ctermfg=".cterm_gray_500
-exec "hi Visual ctermbg=".cterm_zinc_gray_900
-exec "hi VisualNOS ctermfg=".cterm_teal." ctermbg=".cterm_zinc_gray_900
 exec "hi WarningMsg ctermfg=".cterm_teal
-exec "hi WildMenu ctermfg=".cterm_gray_700." ctermbg=".cterm_zinc_gray_900
 
 unlet cterm_gray_900 cterm_zinc_gray_900 cterm_gray_800 cterm_gray_700 cterm_gray_600 cterm_gray_500 cterm_gray_400 cterm_teal
