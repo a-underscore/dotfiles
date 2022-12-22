@@ -61,7 +61,7 @@ exec "hi SpellLocal ctermfg=".gray_700
 exec "hi SpellRare ctermfg=".teal
 exec "hi StatusLine ctermfg=".gray_400." ctermbg=".dark_gray." cterm=none"
 exec "hi TabLine ctermfg=".gray_900." ctermbg=".gray_400
-exec "hi TabLineFill ctermfg=".dark_gray
+exec "hi TabLineFill ctermfg=".gray_400
 exec "hi TabLineSel ctermfg=".gray_400." ctermbg=".dark_gray
 exec "hi Title ctermfg=".gray_500
 exec "hi WarningMsg ctermfg=".teal
