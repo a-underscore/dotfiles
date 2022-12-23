@@ -11,6 +11,7 @@ set autoread
 set autowrite
 set guifont="pango:RobotoMono 12"
 set completeopt=menu,menuone,preview,noselect,noinsert
+set signcolumn=yes 
 
 call neomake#configure#automake('nrwi')
 

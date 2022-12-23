@@ -41,7 +41,7 @@ exec "hi ErrorMsg ctermfg=".gray_400." ctermbg=".teal
 exec "hi VertSplit ctermfg=".gray_400." ctermbg=".gray_400
 exec "hi Folded ctermfg=".gray_600." ctermbg=".zinc_gray_900
 exec "hi FoldColumn ctermfg=".gray_600." ctermbg=".zinc_gray_900
-exec "hi SignColumn ctermbg=".gray_900
+exec "hi SignColumn ctermbg=".gray_400
 exec "hi IncSearch ctermfg=".gray_900." ctermbg=".gray_400
 exec "hi LineNr ctermfg=".gray_900." ctermbg=".gray_400
 exec "hi CursorLineNr cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
