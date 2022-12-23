@@ -1,7 +1,6 @@
 let gray_900 = 233
 let gray_800 = 239
 let gray_700 = 243
-let gray_600 = 246
 let gray_500 = 249
 let gray_400 = 252
 let zinc_gray_900 = 59
@@ -39,9 +38,9 @@ exec "hi DiffDelete ctermfg=".teal." ctermbg=".zinc_gray_900
 exec "hi DiffText ctermfg=".gray_400." ctermbg=".gray_800
 exec "hi ErrorMsg ctermfg=".gray_400." ctermbg=".teal
 exec "hi VertSplit ctermfg=".gray_400." ctermbg=".gray_400
-exec "hi Folded ctermfg=".gray_600." ctermbg=".zinc_gray_900
-exec "hi FoldColumn ctermfg=".gray_600." ctermbg=".zinc_gray_900
-exec "hi SignColumn ctermbg=".gray_400
+exec "hi Folded ctermfg=".gray_900." ctermbg=".zinc_gray_900
+exec "hi FoldColumn ctermfg=".gray_900." ctermbg=".zinc_gray_900
+exec "hi SignColumn ctermbg=".gray_900
 exec "hi IncSearch ctermfg=".gray_900." ctermbg=".gray_400
 exec "hi LineNr ctermfg=".gray_900." ctermbg=".gray_400
 exec "hi CursorLineNr cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
@@ -66,4 +65,4 @@ exec "hi TabLineSel cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
 exec "hi Title ctermfg=".gray_500
 exec "hi WarningMsg ctermfg=".teal
 
-unlet gray_900 zinc_gray_900 gray_800 gray_700 gray_600 gray_500 gray_400 teal
+unlet gray_900 zinc_gray_900 gray_800 gray_700 gray_500 gray_400 teal
