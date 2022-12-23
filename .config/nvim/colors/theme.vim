@@ -38,18 +38,18 @@ exec "hi DiffChange ctermfg=".gray_400." ctermbg=".zinc_gray_900
 exec "hi DiffDelete ctermfg=".teal." ctermbg=".zinc_gray_900
 exec "hi DiffText ctermfg=".gray_400." ctermbg=".gray_800
 exec "hi ErrorMsg ctermfg=".gray_400." ctermbg=".teal
-exec "hi VertSplit ctermfg=".gray_400
+exec "hi VertSplit ctermfg=".gray_400." ctermbg=".gray_400
 exec "hi Folded ctermfg=".gray_600." ctermbg=".zinc_gray_900
 exec "hi FoldColumn ctermfg=".gray_600." ctermbg=".zinc_gray_900
 exec "hi SignColumn ctermbg=".gray_900
 exec "hi IncSearch ctermfg=".gray_900." ctermbg=".gray_400
-exec "hi LineNr ctermfg=".zinc_gray_900." ctermbg=".gray_900
-exec "hi CursorLineNr cterm=none ctermfg=".gray_400." ctermbg=".dark_gray
+exec "hi LineNr ctermfg=".gray_900." ctermbg=".gray_400
+exec "hi CursorLineNr cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
 exec "hi MatchParen ctermbg=".gray_800
 exec "hi MoreMsg ctermfg=".gray_900." ctermbg=".gray_700
 exec "hi NonText ctermfg=".zinc_gray_900." ctermbg=".gray_900
 exec "hi Pmenu ctermfg=".gray_900." ctermbg=".gray_400
-exec "hi PmenuSel ctermfg=".gray_400." ctermbg=".dark_gray
+exec "hi PmenuSel cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
 exec "hi PmenuSbar ctermfg=".teal." ctermbg=".zinc_gray_900
 exec "hi PmenuThumb ctermfg=".teal." ctermbg=".teal
 exec "hi Question ctermfg=".gray_400." ctermbg=".zinc_gray_900
@@ -59,10 +59,10 @@ exec "hi SpellBad ctermfg=".teal." ctermbg=NONE cterm=undercurl"
 exec "hi SpellCap ctermfg=".gray_400." ctermbg=NONE cterm=undercurl"
 exec "hi SpellLocal ctermfg=".gray_700
 exec "hi SpellRare ctermfg=".teal
-exec "hi StatusLine ctermfg=".gray_400." ctermbg=".dark_gray." cterm=none"
-exec "hi TabLine ctermfg=".gray_900." ctermbg=".gray_400
+exec "hi StatusLine cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
+exec "hi TabLine ctermfg=".gray_900." ctermbg=".gray_400." cterm=none"
 exec "hi TabLineFill ctermfg=".gray_400
-exec "hi TabLineSel ctermfg=".gray_400." ctermbg=".dark_gray
+exec "hi TabLineSel cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
 exec "hi Title ctermfg=".gray_500
 exec "hi WarningMsg ctermfg=".teal
 
