@@ -1,5 +1,4 @@
 source ~/.config/nvim/plugs.vim
-
 colorscheme theme
 
 set number
@@ -12,6 +11,8 @@ set autowrite
 set guifont="pango:RobotoMono 12"
 set completeopt=menu,menuone,preview,noselect,noinsert
 set signcolumn=yes 
+
+let g:netrw_banner=0
 
 call neomake#configure#automake('nrwi')
 
