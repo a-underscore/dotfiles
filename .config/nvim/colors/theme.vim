@@ -1,10 +1,11 @@
-let gray_900 = 233
-let gray_800 = 239
-let gray_700 = 243
-let gray_500 = 249
-let gray_400 = 252
+let gray_900 = 234
+let gray_600 = 235
+let gray_800 = 238
+let gray_700 = 246
+let gray_500 = 244
+let gray_400 = 249
 let zinc_gray_900 = 59
-let dark_gray = 16
+let dark_gray = 233
 let teal = 36
 
 highlight clear
@@ -30,27 +31,27 @@ exec "hi ColorColumn ctermbg=".zinc_gray_900
 exec "hi Conceal ctermfg=".gray_800
 exec "hi Cursor ctermfg=".gray_900
 exec "hi CursorColumn ctermbg=".zinc_gray_900
-exec "hi CursorLine cterm=none ctermbg=".dark_gray
+exec "hi CursorLine cterm=bold ctermbg=".zinc_gray_900
 exec "hi Directory ctermfg=".gray_500
 exec "hi DiffAdd ctermfg=".teal." ctermbg=".zinc_gray_900
 exec "hi DiffChange ctermfg=".gray_400." ctermbg=".zinc_gray_900
 exec "hi DiffDelete ctermfg=".teal." ctermbg=".zinc_gray_900
 exec "hi DiffText ctermfg=".gray_400." ctermbg=".gray_800
 exec "hi ErrorMsg ctermfg=".gray_400." ctermbg=".teal
-exec "hi VertSplit ctermfg=".gray_400." ctermbg=".gray_400
+exec "hi VertSplit cterm=bold ctermfg=".dark_gray." ctermbg=".dark_gray." cterm=none"
 exec "hi Folded ctermfg=".gray_900." ctermbg=".zinc_gray_900
 exec "hi FoldColumn ctermfg=".gray_900." ctermbg=".zinc_gray_900
 exec "hi SignColumn ctermbg=".gray_900
 exec "hi IncSearch ctermfg=".gray_900." ctermbg=".gray_400
-exec "hi LineNr ctermfg=".gray_900." ctermbg=".gray_400
-exec "hi CursorLineNr cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
+exec "hi LineNr ctermfg=".zinc_gray_900." ctermbg=".gray_900
+exec "hi CursorLineNr cterm=bold ctermfg=".gray_400." ctermbg=".zinc_gray_900
 exec "hi MatchParen ctermbg=".gray_800
 exec "hi MoreMsg ctermfg=".gray_900." ctermbg=".gray_700
 exec "hi NonText ctermfg=".zinc_gray_900." ctermbg=".gray_900
-exec "hi Pmenu ctermfg=".gray_900." ctermbg=".gray_400
-exec "hi PmenuSel cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
-exec "hi PmenuSbar ctermfg=".teal." ctermbg=".zinc_gray_900
-exec "hi PmenuThumb ctermfg=".teal." ctermbg=".teal
+exec "hi Pmenu ctermfg=".zinc_gray_900." ctermbg=".dark_gray
+exec "hi PmenuSel cterm=bold ctermfg=".gray_400." ctermbg=".zinc_gray_900
+exec "hi PmenuSbar ctermbg=".dark_gray
+exec "hi PmenuThumb ctermbg=".zinc_gray_900
 exec "hi Question ctermfg=".gray_400." ctermbg=".zinc_gray_900
 exec "hi Search ctermfg=".gray_900." ctermbg=".gray_400
 exec "hi SpecialKey ctermfg=".gray_700." ctermbg=".gray_900
@@ -58,10 +59,11 @@ exec "hi SpellBad ctermfg=".teal." ctermbg=NONE cterm=undercurl"
 exec "hi SpellCap ctermfg=".gray_400." ctermbg=NONE cterm=undercurl"
 exec "hi SpellLocal ctermfg=".gray_700
 exec "hi SpellRare ctermfg=".teal
-exec "hi StatusLine cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
-exec "hi TabLine ctermfg=".gray_900." ctermbg=".gray_400." cterm=none"
-exec "hi TabLineFill ctermfg=".gray_400
-exec "hi TabLineSel cterm=bold ctermfg=".gray_400." ctermbg=".dark_gray
+exec "hi StatusLine cterm=bold ctermfg=".gray_400." ctermbg=".zinc_gray_900
+exec "hi StatusLineNC ctermfg=".dark_gray." ctermbg="zinc_gray_900
+exec "hi TabLine ctermfg=".zinc_gray_900." ctermbg=".dark_gray." cterm=none"
+exec "hi TabLineFill ctermfg=".dark_gray
+exec "hi TabLineSel cterm=bold ctermfg=".gray_400." ctermbg=".zinc_gray_900
 exec "hi Title ctermfg=".gray_500
 exec "hi WarningMsg ctermfg=".teal
 

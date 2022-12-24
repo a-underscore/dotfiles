@@ -1,4 +1,5 @@
 source ~/.config/nvim/plugs.vim
+
 colorscheme theme
 
 set number
@@ -8,8 +9,6 @@ set mouse=
 set cursorline
 set autoread
 set autowrite
-set guifont="pango:RobotoMono 12"
-set completeopt=menu,menuone,preview,noselect,noinsert
 set signcolumn=yes 
 
 let g:netrw_banner=0
