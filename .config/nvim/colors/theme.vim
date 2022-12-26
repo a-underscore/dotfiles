@@ -43,7 +43,7 @@ exec "hi Folded ctermfg=".gray_900." ctermbg=".light_gray
 exec "hi FoldColumn ctermfg=".gray_900." ctermbg=".light_gray
 exec "hi SignColumn ctermbg=".gray_900
 exec "hi IncSearch ctermfg=".gray_900." ctermbg=".gray_400
-exec "hi LineNr ctermfg=".light_gray." ctermbg=".gray_900
+exec "hi LineNr ctermfg=".light_gray." ctermbg=".dark_gray
 exec "hi CursorLineNr cterm=bold ctermfg=".gray_400." ctermbg=".light_gray
 exec "hi MatchParen ctermbg=".gray_800
 exec "hi MoreMsg ctermfg=".gray_900." ctermbg=".gray_700
