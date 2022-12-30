@@ -1,5 +1,6 @@
 configuration {
 	sort: true;
+	sorting-method: "fzf";
 	disable-history: true;
 	modes: "run,window";
 	font: "RobotoMono 12";
