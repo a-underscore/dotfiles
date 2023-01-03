@@ -1,0 +1,3 @@
+[submodule "Projects/physhex/hex"]
+	path = Projects/physhex/hex
+	url = https://github.com/a-underscore/hex
