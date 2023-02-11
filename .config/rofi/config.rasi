@@ -1,0 +1,175 @@
+configuration {
+	sort: true;
+	sorting-method: "fzf";
+	disable-history: true;
+	modes: "run,window";
+	font: "RobotoMono 12";
+	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
+	kb-row-down: "Down,Super+j";
+	kb-accept-entry: "Return,KP_Enter";
+	kb-accept-alt: "Control+Return,Control+KP_Enter";
+	kb-accept-custom: "Shift+Return,Shift+KP_Enter";
+	kb-accept-custom-alt: "Control+Shift+Return,Control+Shift+KP_Enter";
+	terminal: "alacritty";
+	kb-mode-next: "Shift+Right,Control+Tab,Super+l";
+	kb-mode-previous: "Shift+Left,Control+Shift+Tab,Super+h";
+	kb-remove-char-back: "BackSpace";
+}
+* {
+    red:                         #ff0000;
+    darkred:                     #880000;
+    white: 			 #ffffff;
+    gray:                  	 #999999;
+    darkishgray:                 #333333;
+    darkgray:                  	 #666666;
+    darkergray:                  #121212;
+    border-thickness:            4px;
+    padding-thickness:           2px;
+    half-thickness:              1px;
+    side-thickness:              3px;
+    txt-color: 			 var(white);
+    selected-active-background:  var(gray);
+    separator-color:             var(gray);
+    alternate-urgent-background: var(urgent-background);
+    background-color:            transparent;
+    border-color:                var(gray);
+    normal-background:           var(darkishgray);
+    background:                  var(darkergray);
+    selected-urgent-background:  var(red);
+    alternate-active-background: var(selected-active-background);
+    urgent-background:           var(darkred);
+    active-background:           var(darkgray);
+    selected-normal-background:  var(gray);
+    alternate-normal-background: var(normal-background);
+}
+element {
+    margin: var(half-thickness);
+    padding: 0;
+    spacing: 0;
+    border:  0;
+}
+element normal.normal {
+    background-color: var(normal-background);
+    text-color:       var(txt-color);
+}
+element normal.urgent {
+    background-color: var(urgent-background);
+    text-color:       var(txt-color);
+}
+element normal.active {
+    background-color: var(active-background);
+    text-color:       var(txt-color);
+}
+element selected.normal {
+    background-color: var(selected-normal-background);
+    text-color:       var(txt-color);
+}
+element selected.urgent {
+    background-color: var(selected-urgent-background);
+    text-color:       var(txt-color);
+}
+element selected.active {
+    background-color: var(selected-active-background);
+    text-color:       var(txt-color);
+}
+element alternate.normal {
+    background-color: var(alternate-normal-background);
+    text-color:       var(txt-color);
+}
+element alternate.urgent {
+    background-color: var(alternate-urgent-background);
+    text-color:       var(txt-color);
+}
+element alternate.active {
+    background-color: var(active-background);
+    text-color:       var(txt-color);
+}
+element-text {
+    background-color: transparent;
+    highlight:        none;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: transparent;
+    text-color:       var(white);
+}
+window {
+    padding:          0;
+    margin:           0;
+    background-color: var(background);
+    border:           var(border-thickness);
+}
+mainbox {
+    padding: 0;
+    border:  0;
+    margin: var(side-thickness);
+}
+message {
+    margin: 0;
+    padding:      0;
+    border-color: var(separator-color);
+    border:       0;
+}
+textbox {
+    background-color: var(active-background);
+    text-color: var(txt-color);
+}
+listview {
+    scrollbar:    false;
+    padding: 0;
+    border: 0;
+    border-color: var(separator-color);
+}
+sidebar {
+    border-color: var(separator-color);
+    border:       0;
+}
+button {
+    spacing:    0;
+    text-color: var(txt-color);
+}
+button selected {
+    background-color: var(selected-normal-background);
+    text-color:       var(txt-color);
+}
+num-filtered-rows {
+    expand:     false;
+    text-color: var(txt-color);
+}
+num-rows {
+    expand:     false;
+    text-color: var(txt-color);
+}
+textbox-num-sep {
+    expand:     false;
+    str:        "/";
+    text-color: var(txt-color);
+}
+inputbar {
+    margin: var(half-thickness);
+    text-color: var(txt-color);
+    padding: 0;
+    background-color: var(selected-normal-background);
+}
+case-indicator {
+    spacing:    0;
+    text-color: var(txt-color);
+}
+entry {
+    text-color:        var(txt-color);
+    spacing:           0;
+    padding:           0;
+    border: 0;
+    placeholder-color: var(txt-color);
+    placeholder:       "";
+}
+prompt {
+    spacing:    0;
+    text-color: var(txt-color);
+}
+textbox-prompt-colon {
+    margin:     0;
+    expand:     false;
+    str:        ": ";
+    text-color: inherit;
+}

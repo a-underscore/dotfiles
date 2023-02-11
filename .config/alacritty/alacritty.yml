@@ -1,0 +1,15 @@
+schemes:
+  colors: &theme
+    primary:
+      foreground: "#ffffff"
+      background: "#121212"
+      bright_foreground: "#ffffff"
+
+colors: *theme
+
+font:
+  normal:
+    family:
+      RobotoMono
+    style: Regular
+  size: 12.0
