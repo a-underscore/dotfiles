@@ -19,7 +19,7 @@ configuration {
     red:                         #ff0000;
     darkred:                     #880000;
     white: 			 #ffffff;
-    gray:                  	 #999999;
+    gray:                  	 #009999;
     darkishgray:                 #333333;
     darkgray:                  	 #666666;
     darkergray:                  #121212;
@@ -111,7 +111,7 @@ message {
     border:       0;
 }
 textbox {
-    background-color: var(gray);
+    background-color: var(active-background);
     text-color: var(txt-color);
 }
 listview {
@@ -149,7 +149,7 @@ inputbar {
     margin: var(half-thickness);
     text-color: var(txt-color);
     padding: 0;
-    background-color: var(darkergray);
+    background-color: var(darkishgray);
 }
 case-indicator {
     spacing:    0;
