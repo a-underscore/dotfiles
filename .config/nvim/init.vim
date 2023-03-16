@@ -10,6 +10,7 @@ set cursorline
 set autoread
 set autowrite
 set signcolumn=yes 
+set shortmess=I
 
 let g:netrw_banner=0
 
