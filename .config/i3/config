@@ -119,7 +119,7 @@ client.placeholder $primary $primary $font_color $font_color $primary
 
 default_border normal $thickness
 
-for_window [all] title_format "| %title |"
+focus_on_window_activation none
 
 #
 # Idle
