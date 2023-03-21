@@ -14,10 +14,6 @@ set shortmess=I
 
 let g:netrw_banner=0
 
-call neomake#configure#automake('nrwi')
-
-let g:neomake_open_list = 2
-
 lua << EOF
 
 require('tabline').setup({})
