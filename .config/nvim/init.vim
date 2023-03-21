@@ -11,6 +11,8 @@ set autoread
 set autowrite
 set signcolumn=yes 
 set shortmess=I
+set completeopt-=preview
+
 
 let g:netrw_banner=0
 
