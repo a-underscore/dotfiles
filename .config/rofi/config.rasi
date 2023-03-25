@@ -41,7 +41,7 @@ configuration {
 }
 element {
     margin: var(half-thickness);
-    padding: 0;
+    padding: 2px;
     spacing: 0;
     border:  0;
 }
