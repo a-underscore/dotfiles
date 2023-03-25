@@ -17,7 +17,6 @@ configuration {
 }
 * {
     red:                         #ff0000;
-    darkred:                     #880000;
     white: 			 #ffffff;
     gray:                  	 #009999;
     darkishgray:                 #333333;
@@ -35,7 +34,7 @@ configuration {
     background:                  var(darkergray);
     selected-urgent-background:  var(red);
     alternate-active-background: var(selected-active-background);
-    urgent-background:           var(darkred);
+    urgent-background:           var(red);
     active-background:           var(darkgray);
     selected-normal-background:  var(gray);
     alternate-normal-background: var(normal-background);
@@ -63,7 +62,7 @@ element selected.normal {
     text-color:       var(txt-color);
 }
 element selected.urgent {
-    background-color: var(selected-urgent-background);
+    background-color: var(selected-normal-background);
     text-color:       var(txt-color);
 }
 element selected.active {
@@ -75,7 +74,7 @@ element alternate.normal {
     text-color:       var(txt-color);
 }
 element alternate.urgent {
-    background-color: var(alternate-urgent-background);
+    background-color: var(alternate-normal-background);
     text-color:       var(txt-color);
 }
 element alternate.active {
