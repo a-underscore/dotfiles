@@ -24,14 +24,12 @@ configuration {
     darkgray:                  	 #666666;
     darkergray:                  #121212;
     border-thickness:            4px;
-    padding-thickness:           2px;
     half-thickness:              1px;
     side-thickness:              3px;
     txt-color: 			 var(white);
     selected-active-background:  var(gray);
     separator-color:             var(gray);
     alternate-urgent-background: var(urgent-background);
-    background-color:            transparent;
     border-color:                var(gray);
     normal-background:           var(darkishgray);
     background:                  var(darkergray);
