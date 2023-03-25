@@ -23,8 +23,9 @@ configuration {
     darkgray:                  	 #666666;
     darkergray:                  #121212;
     border-thickness:            4px;
-    half-thickness:              1px;
     side-thickness:              3px;
+    half-thickness:              2px;
+    fourth-thickness:            1px;
     txt-color: 			 var(white);
     selected-active-background:  var(gray);
     separator-color:             var(gray);
@@ -40,8 +41,8 @@ configuration {
     alternate-normal-background: var(normal-background);
 }
 element {
-    margin: var(half-thickness);
-    padding: 2px;
+    margin: var(fourth-thickness);
+    padding: var(half-thickness);
     spacing: 0;
     border:  0;
 }
@@ -143,7 +144,7 @@ textbox-num-sep {
     text-color: var(txt-color);
 }
 inputbar {
-    margin: var(half-thickness);
+    margin: var(fourth-thickness);
     text-color: var(txt-color);
     padding: 0;
 }
