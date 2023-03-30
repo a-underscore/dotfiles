@@ -129,9 +129,7 @@ exec --no-startup-id "xidle -timeout 600 -program lock"
 # Pipewire
 #
 
-exec --no-startup-id wireplumber
-exec --no-startup-id pipewire
-exec --no-startup-id pipewire-pulse
+exec --no-startup-id "pipewire & pipewire-pulse & wireplumber &"
 
 #
 # Font
