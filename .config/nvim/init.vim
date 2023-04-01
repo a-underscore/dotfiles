@@ -13,6 +13,7 @@ set signcolumn=yes
 set shortmess=I
 set completeopt-=preview
 
+call neomake#configure#automake('nrwi')
 
 let g:netrw_banner=0
 
