@@ -19,8 +19,10 @@ set $right l
 set $term alacritty
 set $status ~/.config/i3/status.sh
 set $exit exec --no-startup-id i3-msg exit
-set $launcher exec --no-startup-id "rofi -show run -normal-window"
+set $launcher exec --no-startup-id "rofi -show drun -normal-window"
+set $ exec --no-startup-id "rofi -show drun -normal-window"
 set $switcher exec --no-startup-id "rofi -show window -normal-window"
+set $switcher_class "Rofi"
 
 #
 # Keybinds
@@ -118,7 +120,7 @@ client.urgent $urgent $urgent $font_color $font_color $urgent
 client.placeholder $primary $primary $font_color $font_color $primary
 
 for_window [class=".*"] border normal $thickness
-for_window [class="Rofi"] floating enable
+for_window [class=$switcher_class] floating enable
 
 #
 # Idle

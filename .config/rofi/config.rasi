@@ -1,18 +1,15 @@
-configuration { sort: true;
-	sorting-method: "fzf";
+configuration { sort: true; sorting-method: "fzf";
 	disable-history: true;
-	modes: "run,window";
+	modes: "drun,run,window";
 	font: "RobotoMono 12";
-	kb-row-up: "Up,Super+k,Shift+Tab,Shift+ISO_Left_Tab";
-	kb-row-down: "Down,Super+j";
-	kb-accept-entry: "Return,KP_Enter";
-	kb-accept-alt: "Control+Return,Control+KP_Enter";
-	kb-accept-custom: "Shift+Return,Shift+KP_Enter";
-	kb-accept-custom-alt: "Control+Shift+Return,Control+Shift+KP_Enter";
-	terminal: "alacritty";
-	kb-mode-next: "Shift+Right,Control+Tab,Super+l";
-	kb-mode-previous: "Shift+Left,Control+Shift+Tab,Super+h";
+	kb-row-up: "Up,Control+p";
+	kb-row-down: "Down,Control+n";
+	kb-accept-entry: "Return";
+	kb-accept-alt: "Control+Return";
+	kb-accept-custom: "Shift+Return";
+	kb-accept-custom-alt: "Control+Shift+Return";
 	kb-remove-char-back: "BackSpace";
+	terminal: "alacritty";
 }
 * {
     red:                         #ff0000;
