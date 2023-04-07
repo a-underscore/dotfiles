@@ -1,8 +1,9 @@
 configuration {
-	sort: true; sorting-method: "fzf";
+	sorting-method: "fzf";
 	disable-history: true;
 	modes: "combi,window";
 	combi-modes: "drun,run";
+	case-sensitive: true;
 	font: "RobotoMono 12";
 	kb-accept-alt: "Control+Return";
 	kb-accept-custom: "Shift+Return";
