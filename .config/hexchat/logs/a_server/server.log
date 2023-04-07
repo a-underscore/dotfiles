@@ -1,0 +1,33 @@
+**** BEGIN LOGGING AT Fri Apr  7 14:42:37 2023
+
+Apr 07 14:42:37 *	Looking up newserver
+**** BEGIN LOGGING AT Fri Apr  7 14:57:06 2023
+
+Apr 07 14:57:06 *	Looking up 45.37.114.109
+Apr 07 14:57:06 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:57:06 *	Connection failed (Connection refused)
+Apr 07 14:57:12 Checksum plugin unloaded
+Apr 07 14:57:12 FiSHLiM plugin unloaded
+Apr 07 14:57:12 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:57:12 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:58:30 2023
+
+Apr 07 14:58:30 *	Looking up 45.37.114.109
+Apr 07 14:58:30 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 14:58:30 *	Connection failed (Connection refused)
+Apr 07 14:58:40 Cycling to next server in a_server...
+Apr 07 14:58:40 *	Disconnected ()
+**** ENDING LOGGING AT Fri Apr  7 14:58:40 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:58:40 2023
+
+Apr 07 14:58:40 *	Looking up 45.37.114.109
+Apr 07 14:58:40 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 14:58:42 *	Connection failed ((336130315) error:1408F10B:SSL routines:ssl3_get_record:wrong version number)
+Apr 07 14:58:42 Are you sure this is a SSL capable server and port?
+Apr 07 15:00:58 Checksum plugin unloaded
+Apr 07 15:00:58 FiSHLiM plugin unloaded
+Apr 07 15:00:58 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 15:00:58 2023
+

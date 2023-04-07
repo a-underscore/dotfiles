@@ -1,0 +1,397 @@
+**** BEGIN LOGGING AT Fri Apr  7 14:42:37 2023
+
+Apr 07 14:42:37 Sysinfo plugin loaded
+Apr 07 14:42:37 FiSHLiM plugin loaded
+Apr 07 14:42:37 Checksum plugin loaded
+**** BEGIN LOGGING AT Fri Apr  7 14:42:58 2023
+
+Apr 07 14:42:58 Sysinfo plugin loaded
+Apr 07 14:42:58 FiSHLiM plugin loaded
+Apr 07 14:42:58 Checksum plugin loaded
+Apr 07 14:42:58 *	Looking up 45.37.114.109
+Apr 07 14:42:58 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:42:58 *	Connection failed (Connection refused)
+Apr 07 14:42:58 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:43:04 Checksum plugin unloaded
+Apr 07 14:43:04 FiSHLiM plugin unloaded
+Apr 07 14:43:04 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:43:04 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:45:31 2023
+
+Apr 07 14:45:31 Sysinfo plugin loaded
+Apr 07 14:45:31 FiSHLiM plugin loaded
+Apr 07 14:45:31 Checksum plugin loaded
+Apr 07 14:45:31 *	Looking up 45.37.114.109
+Apr 07 14:45:31 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:45:31 *	Connection failed (Connection refused)
+Apr 07 14:45:31 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:45:36 Checksum plugin unloaded
+Apr 07 14:45:36 FiSHLiM plugin unloaded
+Apr 07 14:45:36 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:45:36 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:46:02 2023
+
+Apr 07 14:46:02 Sysinfo plugin loaded
+Apr 07 14:46:02 FiSHLiM plugin loaded
+Apr 07 14:46:02 Checksum plugin loaded
+Apr 07 14:46:02 *	Looking up 45.37.114.109
+Apr 07 14:46:02 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:46:02 *	Connection failed (Connection refused)
+Apr 07 14:46:02 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:46:04 Checksum plugin unloaded
+Apr 07 14:46:04 FiSHLiM plugin unloaded
+Apr 07 14:46:04 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:46:04 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:48:23 2023
+
+Apr 07 14:48:23 Sysinfo plugin loaded
+Apr 07 14:48:23 FiSHLiM plugin loaded
+Apr 07 14:48:23 Checksum plugin loaded
+Apr 07 14:48:23 *	Looking up 45.37.114.109
+Apr 07 14:48:23 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:48:23 *	Connection failed (Connection refused)
+Apr 07 14:48:23 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:48:25 Checksum plugin unloaded
+Apr 07 14:48:25 FiSHLiM plugin unloaded
+Apr 07 14:48:25 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:48:25 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:48:49 2023
+
+Apr 07 14:48:49 Sysinfo plugin loaded
+Apr 07 14:48:49 FiSHLiM plugin loaded
+Apr 07 14:48:49 Checksum plugin loaded
+Apr 07 14:48:49 *	Looking up 45.37.114.109
+Apr 07 14:48:49 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:48:49 *	Connection failed (Connection refused)
+Apr 07 14:48:49 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:48:50 Checksum plugin unloaded
+Apr 07 14:48:50 FiSHLiM plugin unloaded
+Apr 07 14:48:50 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:48:50 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:49:15 2023
+
+Apr 07 14:49:15 Sysinfo plugin loaded
+Apr 07 14:49:15 FiSHLiM plugin loaded
+Apr 07 14:49:15 Checksum plugin loaded
+Apr 07 14:49:15 *	Looking up 45.37.114.109
+Apr 07 14:49:15 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:49:15 *	Connection failed (Connection refused)
+Apr 07 14:49:15 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:49:17 Checksum plugin unloaded
+Apr 07 14:49:17 FiSHLiM plugin unloaded
+Apr 07 14:49:17 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:49:17 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:56:56 2023
+
+Apr 07 14:56:56 Sysinfo plugin loaded
+Apr 07 14:56:56 FiSHLiM plugin loaded
+Apr 07 14:56:56 Checksum plugin loaded
+Apr 07 14:56:56 *	Looking up 45.37.114.109
+Apr 07 14:56:56 *	Connecting to 45.37.114.109 (45.37.114.109:6697)
+Apr 07 14:56:56 *	Connection failed (Connection refused)
+Apr 07 14:56:56 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:57:06 Cycling to next server in a_server...
+Apr 07 14:57:06 *	Disconnected ()
+**** ENDING LOGGING AT Fri Apr  7 14:57:06 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:57:21 2023
+
+Apr 07 14:57:21 Sysinfo plugin loaded
+Apr 07 14:57:21 FiSHLiM plugin loaded
+Apr 07 14:57:21 Checksum plugin loaded
+Apr 07 14:57:21 *	Looking up 45.37.114.109
+Apr 07 14:57:21 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 14:57:21 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:57:28 No channel joined. Try /join #<channel>
+Apr 07 14:57:33 Not connected. Try /server <host> [<port>]
+Apr 07 14:57:36 *	Connection failed (Connection refused)
+Apr 07 14:57:40 Checksum plugin unloaded
+Apr 07 14:57:40 FiSHLiM plugin unloaded
+Apr 07 14:57:40 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:57:40 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:58:07 2023
+
+Apr 07 14:58:07 Sysinfo plugin loaded
+Apr 07 14:58:07 FiSHLiM plugin loaded
+Apr 07 14:58:07 Checksum plugin loaded
+Apr 07 14:58:07 *	Looking up 45.37.114.109
+Apr 07 14:58:07 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 14:58:07 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:58:08 *	Connection failed (Connection refused)
+Apr 07 14:58:10 Checksum plugin unloaded
+Apr 07 14:58:10 FiSHLiM plugin unloaded
+Apr 07 14:58:10 Sysinfo plugin unloaded
+**** ENDING LOGGING AT Fri Apr  7 14:58:10 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:58:20 2023
+
+Apr 07 14:58:20 Sysinfo plugin loaded
+Apr 07 14:58:20 FiSHLiM plugin loaded
+Apr 07 14:58:20 Checksum plugin loaded
+Apr 07 14:58:20 *	Looking up 45.37.114.109
+Apr 07 14:58:20 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 14:58:20 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:58:20 *	Connection failed (Connection refused)
+Apr 07 14:58:30 Cycling to next server in a_server...
+Apr 07 14:58:30 *	Disconnected ()
+**** ENDING LOGGING AT Fri Apr  7 14:58:30 2023
+
+**** BEGIN LOGGING AT Fri Apr  7 14:58:57 2023
+
+Apr 07 14:58:57 Sysinfo plugin loaded
+Apr 07 14:58:57 FiSHLiM plugin loaded
+Apr 07 14:58:57 Checksum plugin loaded
+Apr 07 14:58:57 *	Looking up 45.37.114.109
+Apr 07 14:58:57 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 14:58:57 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 14:58:58 *	Connected. Now logging in.
+**** BEGIN LOGGING AT Fri Apr  7 15:01:02 2023
+
+Apr 07 15:01:02 Sysinfo plugin loaded
+Apr 07 15:01:02 FiSHLiM plugin loaded
+Apr 07 15:01:02 Checksum plugin loaded
+Apr 07 15:01:02 *	Looking up 45.37.114.109
+Apr 07 15:01:02 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:01:02 Failed loading notification plugin: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+Apr 07 15:01:02 *	Connected. Now logging in.
+Apr 07 15:01:03 *	*** Looking up your hostname
+Apr 07 15:01:03 *	*** Checking Ident
+Apr 07 15:01:03 *	*** No Ident response
+Apr 07 15:01:03 *	*** Couldn't look up your hostname
+Apr 07 15:01:03 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:03 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:01:03 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:03 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:01:03 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:01:03 *	Disconnected (Remote host closed socket)
+Apr 07 15:01:13 Cycling to next server in a_server...
+Apr 07 15:01:13 *	Disconnected ()
+Apr 07 15:01:13 *	Looking up 45.37.114.109
+Apr 07 15:01:13 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:01:13 *	Connected. Now logging in.
+Apr 07 15:01:13 *	*** Looking up your hostname
+Apr 07 15:01:13 *	*** Checking Ident
+Apr 07 15:01:13 *	*** No Ident response
+Apr 07 15:01:13 *	*** Couldn't look up your hostname
+Apr 07 15:01:13 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:13 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:01:13 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:13 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:01:13 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:01:13 *	Disconnected (Remote host closed socket)
+Apr 07 15:01:23 Cycling to next server in a_server...
+Apr 07 15:01:23 *	Disconnected ()
+Apr 07 15:01:23 *	Looking up 45.37.114.109
+Apr 07 15:01:23 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:01:23 *	Connected. Now logging in.
+Apr 07 15:01:23 *	*** Looking up your hostname
+Apr 07 15:01:23 *	*** Checking Ident
+Apr 07 15:01:23 *	*** No Ident response
+Apr 07 15:01:23 *	*** Couldn't look up your hostname
+Apr 07 15:01:23 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:23 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:01:24 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:24 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:01:24 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:01:24 *	Disconnected (Remote host closed socket)
+Apr 07 15:01:34 Cycling to next server in a_server...
+Apr 07 15:01:34 *	Disconnected ()
+Apr 07 15:01:34 *	Looking up 45.37.114.109
+Apr 07 15:01:34 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:01:34 *	Connected. Now logging in.
+Apr 07 15:01:34 *	*** Looking up your hostname
+Apr 07 15:01:34 *	*** Checking Ident
+Apr 07 15:01:34 *	*** No Ident response
+Apr 07 15:01:34 *	*** Couldn't look up your hostname
+Apr 07 15:01:34 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:34 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:01:34 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:34 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:01:34 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:01:34 *	Disconnected (Remote host closed socket)
+Apr 07 15:01:44 Cycling to next server in a_server...
+Apr 07 15:01:44 *	Disconnected ()
+Apr 07 15:01:44 *	Looking up 45.37.114.109
+Apr 07 15:01:44 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:01:44 *	Connected. Now logging in.
+Apr 07 15:01:44 *	*** Looking up your hostname
+Apr 07 15:01:44 *	*** Checking Ident
+Apr 07 15:01:44 *	*** No Ident response
+Apr 07 15:01:44 *	*** Couldn't look up your hostname
+Apr 07 15:01:44 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:44 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:01:44 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:44 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:01:44 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:01:44 *	Disconnected (Remote host closed socket)
+Apr 07 15:01:54 Cycling to next server in a_server...
+Apr 07 15:01:54 *	Disconnected ()
+Apr 07 15:01:54 *	Looking up 45.37.114.109
+Apr 07 15:01:54 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:01:54 *	Connected. Now logging in.
+Apr 07 15:01:54 *	*** Looking up your hostname
+Apr 07 15:01:54 *	*** Checking Ident
+Apr 07 15:01:54 *	*** No Ident response
+Apr 07 15:01:54 *	*** Couldn't look up your hostname
+Apr 07 15:01:54 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:54 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:01:54 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:01:54 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:01:54 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:01:54 *	Disconnected (Remote host closed socket)
+Apr 07 15:02:04 Cycling to next server in a_server...
+Apr 07 15:02:04 *	Disconnected ()
+Apr 07 15:02:04 *	Looking up 45.37.114.109
+Apr 07 15:02:04 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:02:05 *	Connected. Now logging in.
+Apr 07 15:02:05 *	*** Looking up your hostname
+Apr 07 15:02:05 *	*** Checking Ident
+Apr 07 15:02:05 *	*** No Ident response
+Apr 07 15:02:05 *	*** Couldn't look up your hostname
+Apr 07 15:02:05 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:05 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:02:05 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:05 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:02:05 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:02:05 *	Disconnected (Remote host closed socket)
+Apr 07 15:02:15 Cycling to next server in a_server...
+Apr 07 15:02:15 *	Disconnected ()
+Apr 07 15:02:15 *	Looking up 45.37.114.109
+Apr 07 15:02:15 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:02:16 *	Connected. Now logging in.
+Apr 07 15:02:16 *	*** Looking up your hostname
+Apr 07 15:02:16 *	*** Checking Ident
+Apr 07 15:02:16 *	*** No Ident response
+Apr 07 15:02:16 *	*** Couldn't look up your hostname
+Apr 07 15:02:16 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:16 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:02:16 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:16 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:02:16 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:02:16 *	Disconnected (Remote host closed socket)
+Apr 07 15:02:26 Cycling to next server in a_server...
+Apr 07 15:02:26 *	Disconnected ()
+Apr 07 15:02:26 *	Looking up 45.37.114.109
+Apr 07 15:02:26 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:02:26 *	Connected. Now logging in.
+Apr 07 15:02:26 *	*** Looking up your hostname
+Apr 07 15:02:26 *	*** Checking Ident
+Apr 07 15:02:26 *	*** No Ident response
+Apr 07 15:02:26 *	*** Couldn't look up your hostname
+Apr 07 15:02:26 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:26 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:02:26 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:26 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:02:26 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:02:26 *	Disconnected (Remote host closed socket)
+Apr 07 15:02:36 Cycling to next server in a_server...
+Apr 07 15:02:36 *	Disconnected ()
+Apr 07 15:02:36 *	Looking up 45.37.114.109
+Apr 07 15:02:36 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:02:36 *	Connected. Now logging in.
+Apr 07 15:02:36 *	*** Looking up your hostname
+Apr 07 15:02:36 *	*** Checking Ident
+Apr 07 15:02:36 *	*** No Ident response
+Apr 07 15:02:36 *	*** Couldn't look up your hostname
+Apr 07 15:02:36 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:36 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:02:36 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:36 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:02:36 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:02:36 *	Disconnected (Remote host closed socket)
+Apr 07 15:02:46 Cycling to next server in a_server...
+Apr 07 15:02:46 *	Disconnected ()
+Apr 07 15:02:46 *	Looking up 45.37.114.109
+Apr 07 15:02:46 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:02:46 *	Connected. Now logging in.
+Apr 07 15:02:46 *	*** Looking up your hostname
+Apr 07 15:02:46 *	*** Checking Ident
+Apr 07 15:02:46 *	*** No Ident response
+Apr 07 15:02:46 *	*** Couldn't look up your hostname
+Apr 07 15:02:46 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:46 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:02:46 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:46 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:02:46 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:02:46 *	Disconnected (Remote host closed socket)
+Apr 07 15:02:56 Cycling to next server in a_server...
+Apr 07 15:02:56 *	Disconnected ()
+Apr 07 15:02:56 *	Looking up 45.37.114.109
+Apr 07 15:02:56 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:02:57 *	Connected. Now logging in.
+Apr 07 15:02:57 *	*** Looking up your hostname
+Apr 07 15:02:57 *	*** Checking Ident
+Apr 07 15:02:57 *	*** No Ident response
+Apr 07 15:02:57 *	*** Couldn't look up your hostname
+Apr 07 15:02:57 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:57 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:02:57 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:02:57 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:02:57 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:02:57 *	Disconnected (Remote host closed socket)
+Apr 07 15:03:07 Cycling to next server in a_server...
+Apr 07 15:03:07 *	Disconnected ()
+Apr 07 15:03:07 *	Looking up 45.37.114.109
+Apr 07 15:03:07 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:03:07 *	Connected. Now logging in.
+Apr 07 15:03:07 *	*** Looking up your hostname
+Apr 07 15:03:07 *	*** Checking Ident
+Apr 07 15:03:07 *	*** No Ident response
+Apr 07 15:03:08 *	*** Couldn't look up your hostname
+Apr 07 15:03:08 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:03:08 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:03:08 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:03:08 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:03:08 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:03:08 *	Disconnected (Remote host closed socket)
+Apr 07 15:03:18 Cycling to next server in a_server...
+Apr 07 15:03:18 *	Disconnected ()
+Apr 07 15:03:18 *	Looking up 45.37.114.109
+Apr 07 15:03:18 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:03:18 *	Connected. Now logging in.
+Apr 07 15:03:18 *	*** Looking up your hostname
+Apr 07 15:03:18 *	*** Checking Ident
+Apr 07 15:03:18 *	*** No Ident response
+Apr 07 15:03:18 *	*** Couldn't look up your hostname
+Apr 07 15:03:18 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:03:18 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:03:18 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:03:18 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:03:18 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:03:18 *	Disconnected (Remote host closed socket)
+Apr 07 15:03:28 Cycling to next server in a_server...
+Apr 07 15:03:28 *	Disconnected ()
+Apr 07 15:03:28 *	Looking up 45.37.114.109
+Apr 07 15:03:28 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:03:28 *	Connected. Now logging in.
+Apr 07 15:03:28 *	*** Looking up your hostname
+Apr 07 15:03:28 *	*** Checking Ident
+Apr 07 15:03:28 *	*** No Ident response
+Apr 07 15:03:28 *	*** Couldn't look up your hostname
+Apr 07 15:03:28 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:03:28 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:03:28 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:03:28 *	*** Notice -- You need to install identd to use this server
+Apr 07 15:03:28 *	Closing Link: 45.37.114.109 (Install identd)
+Apr 07 15:03:28 *	Disconnected (Remote host closed socket)
+Apr 07 15:03:38 Cycling to next server in a_server...
+Apr 07 15:03:38 *	Disconnected ()
+Apr 07 15:03:38 *	Looking up 45.37.114.109
+Apr 07 15:03:38 *	Connecting to 45.37.114.109 (45.37.114.109:6667)
+Apr 07 15:03:38 *	Connected. Now logging in.
+Apr 07 15:03:38 *	*** Looking up your hostname
+Apr 07 15:03:38 *	*** Checking Ident
+Apr 07 15:03:38 *	*** No Ident response
+Apr 07 15:03:38 *	*** Couldn't look up your hostname
+Apr 07 15:03:38 *	Capabilities supported: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+Apr 07 15:03:38 *	Capabilities requested: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names 
+Apr 07 15:03:38 *	Capabilities acknowledged: account-notify away-notify chghost extended-join invite-notify multi-prefix userhost-in-names
+**** ENDING LOGGING AT Fri Apr  7 15:03:38 2023
+
