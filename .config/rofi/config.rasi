@@ -1,5 +1,4 @@
-configuration {
-	sort: true;
+configuration { sort: true;
 	sorting-method: "fzf";
 	disable-history: true;
 	modes: "run,window";
@@ -22,7 +21,6 @@ configuration {
     darkishgray:                 #333333;
     darkgray:                  	 #666666;
     darkergray:                  #121212;
-    border-thickness:            4px;
     side-thickness:              3px;
     half-thickness:              2px;
     fourth-thickness:            1px;
@@ -30,7 +28,6 @@ configuration {
     selected-active-background:  var(gray);
     separator-color:             var(gray);
     alternate-urgent-background: var(urgent-background);
-    border-color:                var(gray);
     normal-background:           var(darkishgray);
     background:                  var(darkergray);
     selected-urgent-background:  var(red);
@@ -95,7 +92,7 @@ window {
     padding:          0;
     margin:           0;
     background-color: var(background);
-    border:           var(border-thickness);
+    border:           0;
 }
 mainbox {
     padding: 0;
@@ -105,7 +102,6 @@ mainbox {
 message {
     margin: 0;
     padding:      0;
-    border-color: var(separator-color);
     border:       0;
 }
 textbox {
@@ -116,10 +112,8 @@ listview {
     scrollbar:    false;
     padding: 0;
     border: 0;
-    border-color: var(separator-color);
 }
 sidebar {
-    border-color: var(separator-color);
     border:       0;
 }
 button {
