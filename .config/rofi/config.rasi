@@ -1,10 +1,9 @@
-configuration { sort: true; sorting-method: "fzf";
+configuration {
+	sort: true; sorting-method: "fzf";
 	disable-history: true;
-	modes: "drun,run,window";
+	modes: "combi,window";
+	combi-modes: "drun,run";
 	font: "RobotoMono 12";
-	kb-row-up: "Up,Control+p";
-	kb-row-down: "Down,Control+n";
-	kb-accept-entry: "Return";
 	kb-accept-alt: "Control+Return";
 	kb-accept-custom: "Shift+Return";
 	kb-accept-custom-alt: "Control+Shift+Return";
