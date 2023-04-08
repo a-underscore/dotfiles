@@ -19,7 +19,7 @@ autoload -Uz colors && colors
 
 export PATH="$HOME/.cargo/bin/:$HOME/.local/bin/:$PATH"
 export EDITOR=nvim
-export VISUAL="alacritty -e $EDITOR"
+export VISUAL="$EDITOR"
 
 bindkey -e
 

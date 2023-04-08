@@ -19,7 +19,7 @@ set $term alacritty
 set $status ~/.config/i3/status.sh
 set $exit exec --no-startup-id i3-msg exit
 set $launcher exec --no-startup-id "rofi -show combi -normal-window"
-set $switcher exec --no-startup-id "rofi -show window -normal-window"
+set $switcher exec --no-startup-id "rofi -show filebrowser -normal-window"
 set $switcher_class "Rofi"
 
 #
