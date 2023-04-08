@@ -19,7 +19,6 @@ set $term alacritty
 set $status ~/.config/i3/status.sh
 set $exit exec --no-startup-id i3-msg exit
 set $launcher exec --no-startup-id "rofi -show combi -normal-window"
-set $exec --no-startup-id "rofi -show combi -normal-window"
 set $switcher exec --no-startup-id "rofi -show window -normal-window"
 set $switcher_class "Rofi"
 
@@ -40,6 +39,7 @@ bindsym $mod+Shift+$left move left 1px
 bindsym $mod+Shift+$down move down 1px
 bindsym $mod+Shift+$up move up 1px
 bindsym $mod+Shift+$right move right 1px
+bindsym $mod+Shift+c move position center
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
 bindsym $mod+3 workspace number 3
@@ -119,7 +119,9 @@ client.urgent $urgent $urgent $font_color $font_color $urgent
 client.placeholder $primary $primary $font_color $font_color $primary
 
 for_window [class=".*"] border normal $thickness
-for_window [class=$switcher_class] floating enable
+for_window [class=$switcher_class] floating enable, move position center
+
+mouse_warping output
 
 #
 # Idle
