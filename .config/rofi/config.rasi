@@ -1,8 +1,7 @@
-configuration { sorting-method: "fzf";
-	sort: true;
+configuration { sorting-method: "fzf"; sort: true;
 	disable-history: true;
 	threads: 0;
-	modi: "combi,filebrowser";
+	modi: "combi,window";
 	case-sensitive: true;
 	combi-modi: "run,drun";
 	font: "RobotoMono 12";
