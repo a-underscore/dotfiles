@@ -117,7 +117,7 @@ client.focused_inactive $primary_inactive $primary_inactive $font_color $primary
 client.urgent $urgent $urgent $font_color $font_color $urgent
 client.placeholder $primary $primary $font_color $font_color $primary
 
-for_window [class=".*"] border normal $thickness, title_format "| %title"
+for_window [class=".*"] border normal $thickness, title_format "| %title |"
 for_window [class=$switcher_class] floating enable
 
 mouse_warping output
