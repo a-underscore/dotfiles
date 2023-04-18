@@ -1,0 +1,143 @@
+# Constants
+
+set $uifont pango:RobotoMono 12
+set $thickness 4
+set $bg ~/.config/sway/moon.png
+set $bg_color #121212
+set $font_color #ffffff
+set $primary #009999
+set $primary_unfocused #333333
+set $primary_inactive #666666
+set $urgent #ff0000
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term alacritty
+set $status ~/.config/sway/status.sh
+set $exit exec --no-startup-id i3-msg exit
+set $launcher exec --no-startup-id "rofi -show combi -normal-window"
+set $switcher exec --no-startup-id "rofi -show window -normal-window"
+set $switcher_class "Rofi"
+
+#
+# Keybinds
+#
+
+floating_modifier $mod
+
+bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+Shift+e exit
+bindsym $mod+Shift+q kill
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+bindsym $mod+Shift+$left move left 1px
+bindsym $mod+Shift+$down move down 1px
+bindsym $mod+Shift+$up move up 1px
+bindsym $mod+Shift+$right move right 1px
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+Control+h workspace prev
+bindsym $mod+Control+l workspace next
+bindsym $mod+Control+Shift+h move container to workspace prev
+bindsym $mod+Control+Shift+l move container to workspace next
+
+bindsym $mod+i splith
+bindsym $mod+u splitv
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+p focus parent
+bindsym $mod+o focus child 
+bindsym $mod+d $launcher
+bindsym $mod+a $switcher
+bindsym $mod+Mod1+$down resize grow height 1px
+bindsym $mod+Mod1+$up resize shrink height 1px
+bindsym $mod+Mod1+$left resize shrink width 1px
+bindsym $mod+Mod1+$right resize grow width 1px
+
+#
+# Bar
+#
+
+bar {
+  modifier $mod
+  font $uifont
+
+  status_command while $status; do sleep 0.5; done
+
+  colors {
+    statusline $font_color
+    background $bg_color
+    focused_workspace $primary $primary $font_color
+    active_workspace $primary_inactive $primary_inactive $font_color
+    inactive_workspace $primary_unfocused $primary_unfocused $font_color
+  }
+}
+
+#
+# Windows
+#
+
+client.focused $primary $primary $font_color $primary
+client.unfocused $primary_unfocused $primary_unfocused $font_color $primary_unfocused
+client.focused_inactive $primary_inactive $primary_inactive $font_color $primary_inactive
+client.urgent $urgent $urgent $font_color $font_color $urgent
+client.placeholder $primary $primary $font_color $font_color $primary
+
+for_window [class=".*"] border normal $thickness, title_format "| %title"
+for_window [class=$switcher_class] floating enable
+
+mouse_warping output
+
+
+#
+# DBus
+#
+
+exec --no-startup-id dbus-update-activation-environment --all
+
+#
+# Pipewire
+#
+
+exec --no-startup-id "pipewire & pipewire-pulse & wireplumber &"
+
+#
+# Font
+#
+
+font $uifont
+
+#
+# Display
+#
+
+output * bg "$bg" fill
+output DP-1 res 1920x1200 pos 0 720
+output DP-2 mode 1920x1080@165Hz pos 1920 840
+output DP-3 res 1920x1200 pos 3840 0 transform 270
