@@ -1,3 +1,3 @@
 #!/bin/sh
 
-loginctl suspend && swaylock
+i3lock && loginctl suspend
