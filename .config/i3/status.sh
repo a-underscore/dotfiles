@@ -1,5 +1,6 @@
 #!/bin/sh
 
+batt=$(date +'%-d/%-m/%Y %H:%M:%S')
 date=$(date +'%-d/%-m/%Y %H:%M:%S')
 
-echo "| $date |"
+echo "% $batt % $date %"
