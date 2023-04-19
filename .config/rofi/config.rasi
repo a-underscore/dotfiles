@@ -1,4 +1,5 @@
-configuration { sorting-method: "fzf"; sort: true;
+configuration {
+	sorting-method: "fzf"; sort: true;
 	disable-history: true;
 	threads: 0;
 	modi: "combi,window";
