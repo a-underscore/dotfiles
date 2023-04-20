@@ -11,20 +11,20 @@ setopt rm_star_silent
 
 unsetopt beep
 
-zstyle :compinstall filename '$HOME/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 
 autoload -Uz compinit && compinit
 autoload -Uz bashcompinit && bashcompinit
 autoload -Uz colors && colors
 
 export PATH="$HOME/.cargo/bin/:$HOME/.local/bin/:$PATH"
-export EDITOR=nvim
-export VISUAL="$EDITOR"
+export EDITOR="nvim"
+export VISUAL=$EDITOR
 
 bindkey -e
 
-HISTFILE=~/.zhistory
+HISTFILE="$HOME/.zhistory"
 SAVEHIST=1000
-HISTSIZE=$SAVEHIST
+HISTSIZE="$SAVEHIST"
 
 PROMPT="%{$fg_bold[green]%}%n@%M%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%} %{$fg_bold[green]%}%%%{$reset_color%} "
