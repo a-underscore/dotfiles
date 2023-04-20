@@ -1,6 +1,5 @@
 #!/bin/sh
-
-batt=$(date +'%-d/%-m/%Y %H:%M:%S')
+batt=$(acpi -b)
 date=$(date +'%-d/%-m/%Y %H:%M:%S')
 
 echo "| $batt | $date |"
