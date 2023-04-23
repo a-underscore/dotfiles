@@ -20,4 +20,4 @@ call neomake#configure#automake('nrwi')
 let g:neomake_open_list = 2
 let g:netrw_banner=0
 
-nnoremap <silent> <C-N> :Lexplore<CR>
+nnoremap <C-N> :Lexplore<CR>
