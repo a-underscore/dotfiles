@@ -1,4 +1,5 @@
 source ~/.config/nvim/plugs.vim
+source ~/.config/nvim/tabline.vim
 
 colorscheme theme
 
@@ -12,14 +13,11 @@ set autowrite
 set signcolumn=yes 
 set shortmess=I
 set completeopt-=preview
+set showtabline=2
 
 call neomake#configure#automake('nrwi')
 
 let g:neomake_open_list = 2
 let g:netrw_banner=0
 
-lua << EOF
-
-require('tabline').setup({})
-
-EOF
+nnoremap <silent> <C-N> :Lexplore<CR>
