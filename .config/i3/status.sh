@@ -2,4 +2,4 @@
 
 date=$(date +'%-d/%-m/%Y %H:%M:%S')
 
-echo "> $date >"
+echo "$date"
