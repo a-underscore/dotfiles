@@ -104,7 +104,7 @@ bar {
 # Display
 #
 
-exec --no-startup-id "~/.screenlayout"
+exec --no-startup-id "~/.screenlayout/main.sh"
 exec_always --no-startup-id "feh --bg-fill $bg"
 
 #
