@@ -111,11 +111,11 @@ exec_always --no-startup-id "feh --bg-center $bg"
 # Windows
 #
 
-client.focused $primary $primary $font_color $primary
-client.unfocused $primary $primary_unfocused $font_color $primary_unfocused
-client.focused_inactive $primary_inactive $primary_inactive $font_color $primary_inactive
-client.urgent $primary $urgent $font_color $urgent
-client.placeholder $primary $primary $font_color $font_color $primary
+client.focused $font_color $primary $font_color $primary
+client.unfocused $font_color $primary_unfocused $font_color $primary_unfocused
+client.focused_inactive $font_color $primary_inactive $font_color $primary_inactive
+client.urgent $font_color $urgent $font_color $urgent
+client.placeholder $font_color $primary $font_color $font_color $primary
 
 for_window [class=".*"] border normal $thickness
 for_window [class=$switcher_class] floating enable
