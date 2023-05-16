@@ -2,7 +2,7 @@
 #
 
 set $uifont pango:RobotoMono 12
-set $thickness 2
+set $thickness 1
 set $bg_color #121212
 set $font_color #ffffff
 set $primary #009999
