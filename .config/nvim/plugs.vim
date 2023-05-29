@@ -5,4 +5,3 @@ call plug#begin()
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'neomake/neomake'
 call plug#end()
-

@@ -20,11 +20,9 @@ autoload -Uz colors && colors
 export PATH="$HOME/.cargo/bin/:$HOME/.local/bin/:$PATH"
 export EDITOR="nvim"
 export VISUAL=$EDITOR
+export HISTFILE="$HOME/.zhistory"
+export SAVEHIST=1000
+export HISTSIZE="$SAVEHIST"
+export PROMPT="%{$fg_bold[green]%}%n@%M%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%} %{$fg_bold[green]%}%%%{$reset_color%} "
 
 bindkey -e
-
-HISTFILE="$HOME/.zhistory"
-SAVEHIST=1000
-HISTSIZE="$SAVEHIST"
-
-PROMPT="%{$fg_bold[green]%}%n@%M%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%} %{$fg_bold[green]%}%%%{$reset_color%} "
