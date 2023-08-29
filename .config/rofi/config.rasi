@@ -19,6 +19,7 @@ configuration {
     darkishgray:                 #333333;
     darkgray:                  	 #666666;
     darkergray:                  #121212;
+    thickness:              	 4px;
     side-thickness:              3px;
     half-thickness:              2px;
     fourth-thickness:            1px;
@@ -89,12 +90,11 @@ element-icon {
 window {
     padding:          0;
     margin:           0;
-    background-color: var(background);
-    border:           0;
+    border-color:     var(gray);
+    border:           var(thickness);
 }
 mainbox {
     padding: 0;
-    border:  0;
     margin: var(side-thickness);
 }
 message {
