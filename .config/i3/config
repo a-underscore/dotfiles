@@ -124,7 +124,7 @@ mouse_warping output
 # Idle
 #
 
-exec --no-startup-id "xidle -timeout 600 -program lock"
+exec --no-startup-id "xidle -timeout 600 -program ~/.local/bin/lock"
 
 #
 # Pipewire
