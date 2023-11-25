@@ -2,7 +2,7 @@ configuration {
 	sorting-method: "fzf"; sort: true;
 	disable-history: true;
 	threads: 0;
-	modi: "combi,window";
+	modi: "combi,window,run,drun";
 	case-sensitive: true;
 	combi-modi: "run,drun";
 	font: "RobotoMono 12";
