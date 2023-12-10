@@ -17,7 +17,7 @@ autoload -Uz compinit && compinit
 autoload -Uz bashcompinit && bashcompinit
 autoload -Uz colors && colors
 
-export PATH="$HOME/.cargo/bin/:$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.dotnet/:$HOME/.cargo/bin/:$HOME/.local/bin/:$PATH"
 export EDITOR="nvim"
 export VISUAL=$EDITOR
 export HISTFILE="$HOME/.zhistory"
