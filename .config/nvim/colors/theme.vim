@@ -6,7 +6,7 @@ let gray_500 = 244
 let gray_400 = 249
 let light_gray = 239
 let dark_gray = 234
-let hi = 108
+let hi = 49
 
 highlight clear
 
