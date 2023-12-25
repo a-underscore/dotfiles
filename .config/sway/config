@@ -4,7 +4,7 @@ set $thickness 4
 set $bg ~/.config/sway/moon.png
 set $bg_color #121212
 set $font_color #ffffff
-set $primary #00ffaf
+set $primary #008080
 set $primary_unfocused #333333
 set $primary_inactive #666666
 set $urgent #ff0000

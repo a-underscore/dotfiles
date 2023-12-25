@@ -15,7 +15,7 @@ configuration {
 * {
     red:                         #ff0000;
     white: 			 #ffffff;
-    gray:                  	 #00ffaf;
+    gray:                  	 #008080;
     darkishgray:                 #333333;
     darkgray:                  	 #666666;
     darkergray:                  #121212;
