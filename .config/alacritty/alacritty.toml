@@ -1,0 +1,14 @@
+[colors.primary]
+background = "#121212"
+bright_foreground = "#ffffff"
+foreground = "#ffffff"
+
+[font.normal]
+family = "RobotoMono"
+size = 12
+style = "Regular"
+
+[schemes.colors.primary]
+background = "#121212"
+bright_foreground = "#ffffff"
+foreground = "#ffffff"
