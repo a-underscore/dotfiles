@@ -124,16 +124,13 @@ for_window [class=$switcher_class] floating enable
 mouse_warping output
 
 #
-# Idle
+# Processes
 #
 
 exec --no-startup-id "xidle -timeout 300 -program ~/.local/bin/lock"
-
-#
-# Pipewire
-#
-
 exec --no-startup-id "pipewire & pipewire-pulse & wireplumber &"
+exec --no-startup-id "gnome-keyring-daemon --start"
+exec --no-startup-id "/usr/libexec/polkit-gnome-authentication-agent-1 &"
 
 #
 # Font
