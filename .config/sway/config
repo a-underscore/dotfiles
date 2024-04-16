@@ -137,6 +137,5 @@ font $uifont
 #
 
 output * bg "$bg" fill
-#output DP-1 res 1920x1200 pos 0 720
-#output DP-2 mode 1920x1080@165Hz pos 1920 840
-#output DP-3 res 1920x1200 pos 3840 0 transform 270
+output HDMI-A-1 mode 1920x1080@144hz pos 1920 840
+output DP-1 mode 1920x1080@165hz
