@@ -105,7 +105,7 @@ bar {
 # Display
 #
 
-exec --no-startup-id "~/.screenlayout/main.sh"
+exec --no-startup-id "~/.screenlayout/run.sh"
 exec_always --no-startup-id "feh --bg-center $bg"
 
 #
