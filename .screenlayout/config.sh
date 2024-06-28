@@ -1,2 +1,2 @@
 #!/bin/sh
-export SCREEN_LAYOUT="single"
+export SCREEN_LAYOUT="main"
