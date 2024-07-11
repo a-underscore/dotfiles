@@ -3,7 +3,7 @@
 
     allow_markup = yes
 
-    format = "%s\n%p %b "
+    format = "[ %s ]\n%p %b"
 
     sort = yes
 
