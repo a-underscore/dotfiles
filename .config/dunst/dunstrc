@@ -37,7 +37,7 @@
 
     line_height = 0
 
-    separator_height = /
+    separator_height = 4
 
     padding = 4
 
