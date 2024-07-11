@@ -3,7 +3,7 @@
 
     allow_markup = yes
 
-    format = "[ App: %a ][ Summary: %s ][ Body: %b ]"
+    format = "[ %a ][ %s ][ %b ]"
 
     sort = yes
 
