@@ -3,7 +3,7 @@
 
     allow_markup = yes
 
-    format = "%a\n[ %s ]\n%p %b"
+    format = "[ %a ][ %s ][ %p ][ %b ]"
 
     sort = yes
 
