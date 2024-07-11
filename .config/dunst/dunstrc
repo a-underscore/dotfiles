@@ -1,0 +1,67 @@
+[global]
+    font = pango:RobotoMono 12
+
+    allow_markup = yes
+
+    format = "%s\n%p %b "
+
+    sort = yes
+
+    indicate_hidden = yes
+
+    alignment = center
+
+    bounce_freq = 0
+
+    show_age_threshold = 60
+
+    word_wrap = yes
+
+    ignore_newline = no
+
+    geometry = "0x5+10+150"
+
+    shrink = yes
+
+    transparency = 0
+
+    idle_threshold = 20
+
+    monitor = 0
+
+    follow = mouse
+
+    sticky_history = yes
+
+    show_indicators = yes
+
+    line_height = 0
+
+    separator_height = /
+
+    padding = 4
+
+    horizontal_padding = 4
+
+    separator_color = "#666666"
+
+    startup_notification = false
+
+    background = "#121212"
+
+    foreground = "#ffffff"
+
+[frame]
+    width = 4
+
+[urgency_low]
+    frame_color = "#333333"
+    timeout = 10
+
+[urgency_normal]
+    frame_color = "#008080"
+    timeout = 10
+
+[urgency_critical]
+    frame_color = "#ff0000"
+    timeout = 0
