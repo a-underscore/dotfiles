@@ -65,9 +65,3 @@
 [urgency_critical]
     frame_color = "#ff0000"
     timeout = 0
-
-[spotify]
-    format = "[ %s ][ %b ]"
-
-[discord]
-    format = "[ %s ][ %b ]"
