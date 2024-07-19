@@ -1,3 +1,12 @@
 #!/bin/sh
 
-i3lock && loginctl suspend
+white=ffffff
+font="RobotoMono"
+size=12
+cyan=008080
+red=ff0000
+lightgray=666666
+gray=333333
+darkgray=121212
+
+i3lock --time-font "RobotoMono" --time-size 12 --time-color $white --date-font "RobotoMono" --date-size 12 --date-color $white --verif-font "RobotoMono" --verif-size 12 --verif-color $white --wrong-font "RobotoMono" --wrong-size 12 --wrong-color $white --greeter-font "RobotoMono" --greeter-size 12 --greeter-color $white -c $darkgray --inside-color $lightgray --ring-color $lightgray --ringver-color $gray --ringver-color $cyan --insidever-color $cyan --insidewrong-color $red --ringwrong-color $red --keyhl-color $cyan --bshl-color $lightgray
