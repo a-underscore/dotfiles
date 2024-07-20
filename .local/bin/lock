@@ -22,5 +22,5 @@ i3lock --time-font $font --time-size $size --time-color $white --date-font $font
   --ring-width=10 \
   --clock \
   --indicator \
-  --blur 5 \
+  --blur 1 \
   --no-modkey-text \
