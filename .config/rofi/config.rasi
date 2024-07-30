@@ -1,5 +1,6 @@
 configuration {
-	sorting-method: "fzf"; sort: true;
+	sorting-method: "fzf";
+	sort: true;
 	disable-history: true;
 	threads: 0;
 	modi: "combi,window,run,drun";
@@ -13,70 +14,56 @@ configuration {
 	terminal: "alacritty";
 }
 * {
-    red:                         #ff0000;
-    white: 			 #ffffff;
-    gray:                  	 #008080;
-    darkishgray:                 #333333;
-    darkgray:                  	 #666666;
-    darkergray:                  #121212;
+    urgent:                      #ff0000;
+    txt: 			 #ffffff;
+    cyan:                  	 #008080;
+    unfocused:                   #333333;
+    inactive:                  	 #666666;
+    bg:                  	 #121212;
     thickness:              	 4px;
-    side-thickness:              3px;
-    half-thickness:              2px;
-    fourth-thickness:            1px;
-    txt-color: 			 var(white);
-    selected-active-background:  var(gray);
-    separator-color:             var(gray);
-    alternate-urgent-background: var(urgent-background);
-    normal-background:           var(darkishgray);
-    background:                  var(darkergray);
-    selected-urgent-background:  var(red);
-    alternate-active-background: var(selected-active-background);
-    urgent-background:           var(red);
-    active-background:           var(darkgray);
-    selected-normal-background:  var(gray);
-    alternate-normal-background: var(normal-background);
+    thicknessmargin:             0 0 2px 0;
+    background: 		 var(bg);
 }
 element {
-    margin: var(fourth-thickness);
-    padding: var(half-thickness);
-    spacing: 0;
+    margin: var(thicknessmargin);
+    padding: var(thickness);
     border:  0;
 }
 element normal.normal {
-    background-color: var(normal-background);
-    text-color:       var(txt-color);
+    background-color: var(unfocused);
+    text-color:       var(txt);
 }
 element normal.urgent {
-    background-color: var(urgent-background);
-    text-color:       var(txt-color);
+    background-color: var(urgent);
+    text-color:       var(txt);
 }
 element normal.active {
-    background-color: var(active-background);
-    text-color:       var(txt-color);
+    background-color: var(inactive);
+    text-color:       var(txt);
 }
 element selected.normal {
-    background-color: var(selected-normal-background);
-    text-color:       var(txt-color);
+    background-color: var(cyan);
+    text-color:       var(txt);
 }
 element selected.urgent {
-    background-color: var(selected-normal-background);
-    text-color:       var(txt-color);
+    background-color: var(cyan);
+    text-color:       var(txt);
 }
 element selected.active {
-    background-color: var(selected-active-background);
-    text-color:       var(txt-color);
+    background-color: var(cyan);
+    text-color:       var(txt);
 }
 element alternate.normal {
-    background-color: var(alternate-normal-background);
-    text-color:       var(txt-color);
+    background-color: var(unfocused);
+    text-color:       var(txt);
 }
 element alternate.urgent {
-    background-color: var(alternate-normal-background);
-    text-color:       var(txt-color);
+    background-color: var(unfocused);
+    text-color:       var(txt);
 }
 element alternate.active {
-    background-color: var(active-background);
-    text-color:       var(txt-color);
+    background-color: var(inactive);
+    text-color:       var(txt);
 }
 element-text {
     background-color: transparent;
@@ -85,26 +72,26 @@ element-text {
 }
 element-icon {
     background-color: transparent;
-    text-color:       var(white);
+    text-color:       var(txt);
 }
 window {
     padding:          0;
     margin:           0;
-    border-color:     var(selected-active-background);
+    border-color:     var(cyan);
     border:           var(thickness);
 }
 mainbox {
-    padding: 0;
-    margin: var(side-thickness);
+    padding: var(thickness);
+    margin: 0; 
 }
 message {
-    margin: 0;
+    margin: 	  0;
     padding:      0;
     border:       0;
 }
 textbox {
-    background-color: var(active-background);
-    text-color: var(txt-color);
+    background-color: var(inactive);
+    text-color: var(txt);
 }
 listview {
     scrollbar:    false;
@@ -116,45 +103,45 @@ sidebar {
 }
 button {
     spacing:    0;
-    text-color: var(txt-color);
+    text-color: var(txt);
 }
 button selected {
-    background-color: var(selected-normal-background);
-    text-color:       var(txt-color);
+    background-color: var(cyan);
+    text-color:       var(txt);
 }
-num-filtered-rows {
+num-filteurgent-rows {
     expand:     false;
-    text-color: var(txt-color);
+    text-color: var(txt);
 }
 num-rows {
     expand:     false;
-    text-color: var(txt-color);
+    text-color: var(txt);
 }
 textbox-num-sep {
     expand:     false;
     str:        "/";
-    text-color: var(txt-color);
+    text-color: var(txt);
 }
 inputbar {
-    margin: var(fourth-thickness);
-    text-color: var(txt-color);
+    margin: 0;
+    text-color: var(txt);
     padding: 0;
 }
 case-indicator {
     spacing:    0;
-    text-color: var(txt-color);
+    text-color: var(txt);
 }
 entry {
-    text-color:        var(txt-color);
+    text-color:        var(txt);
     spacing:           0;
     padding:           0;
     border:    	       0;
-    placeholder-color: var(txt-color);
+    placeholder-color: var(txt);
     placeholder:       "";
 }
 prompt {
     spacing:    0;
-    text-color: var(txt-color);
+    text-color: var(txt);
 }
 textbox-prompt-colon {
     margin:     0;

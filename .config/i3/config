@@ -7,8 +7,8 @@ set $thickness 4
 set $bg_color #121212
 set $font_color #ffffff
 set $primary #008080
-set $primary_unfocused #333333
-set $primary_inactive #666666
+set $unfocused #333333
+set $inactive #666666
 set $urgent #ff0000
 set $bg ~/.config/i3/moon.png
 set $mod Mod4
@@ -96,8 +96,8 @@ bar {
     statusline $font_color
     background $bg_color
     focused_workspace $primary $primary $font_color
-    active_workspace $primary_inactive $primary_inactive $font_color
-    inactive_workspace $primary_unfocused $primary_unfocused $font_color
+    active_workspace $inactive $inactive $font_color
+    inactive_workspace $unfocused $unfocused $font_color
   }
 }
 
@@ -113,8 +113,8 @@ exec_always --no-startup-id "feh --bg-center $bg"
 #
 
 client.focused $primary $primary $font_color $primary
-client.unfocused $primary_unfocused $primary_unfocused $font_color $primary_unfocused
-client.focused_inactive $primary_inactive $primary_inactive $font_color $primary_inactive
+client.unfocused $unfocused $unfocused $font_color $unfocused
+client.focused_inactive $inactive $inactive $font_color $inactive
 client.urgent $urgent $urgent $font_color $urgent
 client.placeholder $primary $primary $font_color $font_color $primary
 
