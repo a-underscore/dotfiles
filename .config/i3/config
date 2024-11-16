@@ -128,9 +128,8 @@ mouse_warping output
 #
 
 exec --no-startup-id "/usr/libexec/polkit-gnome-authentication-agent-1 &"
-exec --no-startup-id xss-lock -- ~/.local/bin/xss_lock
 exec --no-startup-id "pipewire & pipewire-pulse & wireplumber &"
-exec --no-startup-id xautolock -time 3 -locker "~/.local/bin/lock_suspend"
+exec_always --no-startup-id xss-lock -- ~/.local/bin/xss_lock
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 #
