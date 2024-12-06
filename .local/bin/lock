@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 white=ffffff
 font="RobotoMono"
@@ -9,7 +9,7 @@ lightgray=666666
 gray=333333
 darkgray=121212
 
-i3lock --time-font $font --time-size $size --time-color $white --date-font $font --date-size $size --date-color $white --verif-font $font --verif-size $size --verif-color $white --wrong-font $font --wrong-size $size --wrong-color $white --greeter-font $font --greeter-size $size --greeter-color $white \
+! pidof i3lock > /dev/null && i3lock --time-font $font --time-size $size --time-color $white --date-font $font --date-size $size --date-color $white --verif-font $font --verif-size $size --verif-color $white --wrong-font $font --wrong-size $size --wrong-color $white --greeter-font $font --greeter-size $size --greeter-color $white \
 -c $darkgray --inside-color $lightgray --ring-color $lightgray --ringver-color $gray --ringver-color $cyan --insidever-color $cyan --insidewrong-color $red --ringwrong-color $red --keyhl-color $cyan --bshl-color $red --time-str="%H:%M:%S" \
   --time-str="[ %H:%M:%S ]" \
   --date-str="[ %A %e %B %Y ]" \
