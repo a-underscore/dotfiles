@@ -1,3 +1,3 @@
 #!/bin/sh
 
-lock && loginctl suspend
+! pidof i3lock > /dev/null && lock && loginctl suspend
