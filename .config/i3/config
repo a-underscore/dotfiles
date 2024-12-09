@@ -2,7 +2,7 @@
 # Constants
 #
 
-set $uifont pango:RobotoMono 12
+$uifont pango:RobotoMono 12
 set $thickness 4
 set $bg_color #121212
 set $font_color #ffffff
