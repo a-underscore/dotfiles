@@ -22,5 +22,5 @@ darkgray=121212
   --ring-width=10 \
   --clock \
   --indicator \
-  --blur 1 \
+  --blur 15 \
   --no-modkey-text \

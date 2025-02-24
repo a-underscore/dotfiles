@@ -26,3 +26,7 @@ export HISTSIZE="$SAVEHIST"
 export PROMPT="%{$fg_bold[green]%}%n@%M%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%} %{$fg_bold[green]%}%%%{$reset_color%} "
 
 bindkey -e
+[ -s "/home/a_/.jabba/jabba.sh" ] && source "/home/a_/.jabba/jabba.sh"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/share/gem/ruby/3.3.0/bin"
