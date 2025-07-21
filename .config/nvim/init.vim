@@ -15,12 +15,10 @@ set shortmess=I
 set completeopt-=preview
 set showtabline=2
 
-call neomake#configure#automake('nrwi')
-
-let g:neomake_open_list = 2
 let g:netrw_banner=0
+let g:ale_set_float = 1
 
-lua <<EOF
+lua << EOF
   -- Set up nvim-cmp.
   local cmp = require'cmp'
 
