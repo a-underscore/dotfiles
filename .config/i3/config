@@ -108,6 +108,8 @@ bar {
 exec --no-startup-id "sh ~/.screenlayout/run.sh"
 exec_always --no-startup-id "feh --bg-center $bg"
 
+include ~/.config/i3/workspaces.conf
+
 #
 # Windows
 #
@@ -135,4 +137,5 @@ exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 #
 # Font
 #
+
 font $uifont

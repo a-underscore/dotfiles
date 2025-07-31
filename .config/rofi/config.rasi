@@ -24,6 +24,13 @@ configuration {
     thicknessmargin:             0 0 2px 0;
     background: 		 var(bg);
 }
+#scrollbar {
+	width: var(thickness);
+	border: 0;
+	handle-thickness: var(thickness);
+	handle-color: var(cyan);
+	padding: 0 0 0 2px;
+}
 element {
     margin: var(thicknessmargin);
     padding: var(thickness);
@@ -94,7 +101,7 @@ textbox {
     text-color: var(txt);
 }
 listview {
-    scrollbar:    false;
+    scrollbar:    true;
     padding: 0;
     border: 0;
 }
