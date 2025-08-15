@@ -23,4 +23,6 @@ darkgray=121212
   --clock \
   --indicator \
   --blur 15 \
-  --no-modkey-text \
+  --no-modkey-text \ && exit 0
+
+exit 1
