@@ -2,6 +2,6 @@
 
 set -e
 
-xset s 10 10
+xset s 10 5
 
 ~/.local/bin/lock
