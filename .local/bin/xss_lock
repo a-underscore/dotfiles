@@ -2,6 +2,6 @@
 
 set -e
 
-xset s dpms 10 5 0
+xset s dpms 10 5
 
 ~/.local/bin/lock
