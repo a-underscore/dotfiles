@@ -1,7 +1,10 @@
 #!/bin/sh
 
-batt=$(acpi -b)
 date=$(date +'%-d/%-m/%Y %H:%M:%S')
+batt=$(acpi -b 2>/dev/null)
 
-echo "[ $batt ] [ $date ]"
-
+if [[ -z $batt ]]; then
+	echo "[ $date ]"
+else
+	echo "[ $batt ] [ $date ]"
+fi
