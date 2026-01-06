@@ -30,3 +30,6 @@ bindkey -e
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/share/gem/ruby/3.3.0/bin"
+export PATH="$PATH:$HOME/.dotnet/tools"
+export PATH="$PATH:/home/a_/.dotnet/sdk/10.0.101/"
+export DOTNET_ROOT="$HOME/.dotnet"
