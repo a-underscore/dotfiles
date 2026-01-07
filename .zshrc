@@ -33,3 +33,7 @@ export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/share/gem/ruby/3.3.0/bin"
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:/home/a_/.dotnet/sdk/10.0.101/"
 export DOTNET_ROOT="$HOME/.dotnet"
+
+if [[ "$(hostname)" -eq "thesuse" || "$(hostname)" -eq "thesusepad" ]]; then
+	export PATH="$PATH:/sbin/:/bin/:/usr/sbin/:/usr/bin/"
+fi
