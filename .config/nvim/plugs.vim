@@ -1,7 +1,6 @@
 set rtp+="~/.config/nvim/colors"
 
 call plug#begin()
-	Plug 'neovim/nvim-lspconfig'
 	Plug 'mfussenegger/nvim-lint'
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'

@@ -1,0 +1,10 @@
+(
+    save_location: Pictures,
+    choice: Window,
+    last_rectangle: Some((
+        left: 951,
+        top: 474,
+        right: 1194,
+        bottom: 664,
+    )),
+)
