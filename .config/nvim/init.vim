@@ -1,7 +1,7 @@
 source ~/.config/nvim/plugs.vim
 source ~/.config/nvim/tabline.vim
 
-colorscheme theme
+colorscheme theme2
 
 set number
 set relativenumber
