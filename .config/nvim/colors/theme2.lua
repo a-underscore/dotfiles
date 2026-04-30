@@ -15,7 +15,8 @@ vim.g.colors_name = "theme2"
 local c = {
   gray_900  = { cterm = 233, hex = "#121212" }, -- Normal bg
   dark_gray = { cterm = 234, hex = "#1c1c1c" }, -- Gutter/panel bg
-  light_gray = { cterm = 239, hex = "#4e4e4e" }, -- CursorLine, folds
+  light_gray = { cterm = 239, hex = "#4e4e4e" }, -- Folds
+  black = { cterm = 16, hex = "#000000" }, -- Cursor line
   gray_800  = { cterm = 242, hex = "#6c6c6c" }, -- Comments
   gray_700  = { cterm = 246, hex = "#949494" }, -- Type, Special, Character
   gray_500  = { cterm = 244, hex = "#808080" }, -- Statement, Underlined
@@ -60,7 +61,7 @@ hi("ColorColumn",  { bg = c.light_gray })
 hi("Conceal",      { fg = c.gray_800 })
 hi("Cursor",       { fg = c.gray_900 })
 hi("CursorColumn", { bg = c.light_gray })
-hi("CursorLine",   { bg = c.light_gray })
+hi("CursorLine",   { bg = c.black })
 hi("Directory",    { fg = c.gray_500 })
  
 -- ── Diff ─────────────────────────────────────────────────────────────────────
