@@ -29,6 +29,7 @@ bindkey -e
 [ -s "/home/a_/.jabba/jabba.sh" ] && source "/home/a_/.jabba/jabba.sh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export XDG_DATA_DIRS="XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share";
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/share/gem/ruby/3.3.0/bin"
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:/home/a_/.dotnet/sdk/10.0.101/"
