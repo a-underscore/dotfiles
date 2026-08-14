@@ -34,8 +34,18 @@ const ARENA_RADIUS: f32 = 4.25; // max axial hex-distance for the player
 const GUN_POS: Vec3 = Vec3::new(0.26, -0.24, -0.5);
 
 fn main() {
+    // Resolve the asset dir at compile time so textures are found whether the
+    // game is launched via `cargo run` or the raw binary from target/.
+    let asset_dir = std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+        .join("assets")
+        .to_string_lossy()
+        .into_owned();
+
     App::new()
-        .add_plugins(DefaultPlugins.set(WindowPlugin {
+        .add_plugins(DefaultPlugins.set(AssetPlugin {
+            file_path: asset_dir,
+            ..default()
+        }).set(WindowPlugin {
             primary_window: Some(Window {
                 title: "HEX FPS — hitscan arena".into(),
                 resolution: (1280, 720).into(),
@@ -343,7 +353,7 @@ fn setup(
     let under = meshes.add(Cuboid::new(0.035, 0.03, 0.18));
 
     commands
-        .spawn((Player, Transform::from_xyz(0.0, EYE_HEIGHT, 3.6)))
+        .spawn((Player, Transform::from_xyz(0.0, EYE_HEIGHT, 3.6), Visibility::default()))
         .with_children(|p| {
             p.spawn((
                 Camera3d::default(),
@@ -371,8 +381,12 @@ fn setup(
                 },
             ))
             .with_children(|c| {
-                c.spawn((GunRoot, Transform::from_translation(GUN_POS)))
-                    .with_children(|g| {
+                c.spawn((
+                    GunRoot,
+                    Transform::from_translation(GUN_POS),
+                    Visibility::default(),
+                ))
+                .with_children(|g| {
                         g.spawn((
                             Mesh3d(body.clone()),
                             MeshMaterial3d(gun_body_mat.clone()),
