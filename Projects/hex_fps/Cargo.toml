@@ -1,0 +1,16 @@
+[package]
+edition = "2024"
+name = "hex_fps"
+version = "0.1.0"
+
+[dependencies]
+hex = { path = "../hex" }
+rapier3d = "0.20.0"
+
+# An FPS is unusable when the dependencies are unoptimized, but we still want
+# fast rebuilds of the game itself.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
