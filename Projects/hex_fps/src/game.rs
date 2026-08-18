@@ -362,40 +362,49 @@ impl Game {
             });
         };
 
+        // Receiver/body. The camera looks down -Z and clips at the 0.1 near
+        // plane, so the whole cube must sit forward of z = -0.1; the old
+        // offset centred the body at -0.06, which put its back half behind the
+        // camera and sliced it off.
         add(
             &mut em,
             tint(&self.assets.gun_body, GUN_BODY),
-            Vector3::new(0.0, 0.0, -0.06),
+            Vector3::new(0.0, -0.06, -0.34),
             UnitQuaternion::identity(),
             Vector3::new(0.09, 0.12, 0.42),
         );
+        // Grip hanging below the receiver. The old +0.10 Z put it behind the
+        // eye, so it was never drawn at all.
         add(
             &mut em,
             tint(&self.assets.gun_body, GUN_BODY),
-            Vector3::new(0.0, -0.12, 0.10),
+            Vector3::new(0.0, -0.22, -0.22),
             UnitQuaternion::identity(),
-            Vector3::new(0.055, 0.14, 0.08),
+            Vector3::new(0.05, 0.15, 0.09),
         );
+        // Glowing barrel poking out the front of the receiver.
         add(
             &mut em,
             tint(&self.assets.gun_glow, GUN_GLOW),
-            Vector3::new(0.0, 0.01, -0.30),
+            Vector3::new(0.0, -0.05, -0.55),
             UnitQuaternion::from_axis_angle(&Vector3::x_axis(), -FRAC_PI_2),
             Vector3::repeat(1.0),
         );
+        // Rear sight on top of the receiver.
         add(
             &mut em,
             tint(&self.assets.gun_accent, GUN_ACCENT),
-            Vector3::new(0.0, 0.085, -0.16),
+            Vector3::new(0.0, 0.01, -0.40),
             UnitQuaternion::identity(),
             Vector3::new(0.02, 0.05, 0.07),
         );
+        // Under-barrel rail.
         add(
             &mut em,
             tint(&self.assets.gun_accent, GUN_ACCENT),
-            Vector3::new(0.0, -0.02, -0.18),
+            Vector3::new(0.0, -0.12, -0.48),
             UnitQuaternion::identity(),
-            Vector3::new(0.035, 0.03, 0.18),
+            Vector3::new(0.035, 0.03, 0.20),
         );
     }
 
@@ -469,7 +478,8 @@ impl Game {
 
         let origin = camera.position;
         let dir = camera.forward().normalize();
-        let muzzle = origin + dir * 0.65;
+        // Just past the glowing barrel tip so the muzzle flash clears the gun.
+        let muzzle = origin + dir * 0.8;
         let hit_point = match self.physics.raycast(origin, dir, FIRE_RANGE) {
             Some((distance, entity)) => {
                 self.score += 100;

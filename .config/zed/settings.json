@@ -7,8 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "lsp_document_colors": "none",
   "agent_servers": {
     "crow-cli": {
+      "default_config_options": {
+        "model": "deepseek:deepseek-v4-pro"
+      },
       "type": "custom",
       "command": "/home/a_/.local/bin/crow-cli",
       "args": ["acp"],

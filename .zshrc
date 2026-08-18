@@ -17,7 +17,7 @@ autoload -Uz compinit && compinit
 autoload -Uz bashcompinit && bashcompinit
 autoload -Uz colors && colors
 
-export PATH="$HOME/.dotnet/:$HOME/.cargo/bin/:$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.cargo/bin/:$HOME/.local/bin/:$PATH"
 export EDITOR="nvim"
 export VISUAL=$EDITOR
 export HISTFILE="$HOME/.zhistory"
@@ -31,8 +31,5 @@ bindkey -e
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export XDG_DATA_DIRS="XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share";
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/share/gem/ruby/3.3.0/bin"
-export PATH="$PATH:$HOME/.dotnet/tools"
-export PATH="$PATH:/home/a_/.dotnet/sdk/10.0.101/"
-export DOTNET_ROOT="$HOME/.dotnet"
 
 . "$HOME/.local/bin/env"
