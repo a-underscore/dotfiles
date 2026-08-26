@@ -1,6 +1,6 @@
 (
     output: "all",
-    source: Path("/home/a_/Downloads/wp5172452-2941277041.jpg"),
+    source: Path("/home/a_/Pictures/wallpapers/astolfo.jpg"),
     filter_by_theme: true,
     rotation_frequency: 300,
     filter_method: Lanczos,
