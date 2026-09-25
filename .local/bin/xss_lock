@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+xset s dpms off 600 300 0
+
+~/.local/bin/lock
