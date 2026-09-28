@@ -1,6 +1,20 @@
 source ~/.config/nvim/plugs.vim
 source ~/.config/nvim/tabline.vim
 
+" ── Appearance ──────────────────────────────────────────────────────────────
+" Without termguicolors Neovim ignores theme2's hex palette and renders the
+" 256-colour cterm approximations instead (the accent came out bright cyan).
+if has('termguicolors') && !has('gui_running')
+  if get(g:, 'theme2_truecolor', $COLORTERM =~# '\v^(truecolor|24bit)$' || $TERM =~# 'direct')
+    set termguicolors
+  endif
+endif
+set background=dark
+if has('nvim-0.11')
+  set winborder=rounded          " rounded borders on floats/hover/completion
+endif
+set fillchars=vert:│,fold:·   " thinner split line, quieter fold marker
+
 colorscheme theme2
 
 set number
@@ -33,8 +47,14 @@ lua << EOF
       end,
     },
     window = {
-      -- completion = cmp.config.window.bordered(),
-      -- documentation = cmp.config.window.bordered(),
+      -- Bordered popups: keep them on Normal/Float surfaces with a visible
+      -- FloatBorder, and use the theme's teal selection for the chosen item.
+      completion = cmp.config.window.bordered({
+        winhighlight = 'Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:Visual,Search:None',
+      }),
+      documentation = cmp.config.window.bordered({
+        winhighlight = 'Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:Visual,Search:None',
+      }),
     },
     mapping = cmp.mapping.preset.insert({
       ['<C-b>'] = cmp.mapping.scroll_docs(-4),

@@ -29,7 +29,20 @@ bindkey -e
 [ -s "/home/a_/.jabba/jabba.sh" ] && source "/home/a_/.jabba/jabba.sh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export XDG_DATA_DIRS="XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share";
+# NOTE: build this value from scratch instead of appending to the inherited one.
+# The original line was `export XDG_DATA_DIRS="XDG_DATA_DIRS:..."` - because the
+# word XDG_DATA_DIRS was never expanded, /usr/local/share and /usr/share were
+# dropped from the search path. xdg-mime/xdg-open then found no .desktop files,
+# so every handler lookup returned nothing and xdg-open silently did nothing.
+# /usr/local/share:/usr/share is Gentoo's default (see /etc/profile.env).
+# Starting from scratch also repairs shells that already inherited the bad value.
+export XDG_DATA_DIRS="/usr/local/share:/usr/share:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share"
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/share/gem/ruby/3.3.0/bin"
 
-. "$HOME/.local/bin/env"
+# NOTE: a file named "env" inside ~/.local/bin shadows /usr/bin/env for every
+# program, because that directory precedes /usr/bin in PATH. A 0-byte leftover
+# of that name silently broke anything invoking `env` -- most visibly xdg-open,
+# which launches desktop-file handlers via `env "$command"` (the browser never
+# started, and the failure was masked because exit_success ran anyway).
+# The empty file has been removed. If you install `uv` later, do NOT leave its
+# env helper named "env" in this directory; source it under another name.

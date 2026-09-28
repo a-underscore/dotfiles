@@ -9,11 +9,11 @@ function! TabLine()
   let s = '' " complete tabline goes here
 
   for t in range(tabpagenr('$'))
-    if t + 1 == tabpagenr()
-      let s .= '%#TabLineSel#'
-    else
-      let s .= '%#TabLine#'
-    endif
+    " Active tab gets its own chip; the modified marker keeps its own colour
+    " so it stays visible on both active and inactive tabs.
+    let s:grp    = (t + 1 == tabpagenr()) ? 'TabLineSel'    : 'TabLine'
+    let s:modgrp = (t + 1 == tabpagenr()) ? 'TabLineModSel' : 'TabLineMod'
+    let s .= '%#' . s:grp . '#'
 
     let s .= ' '
     let s .= '%' . (t + 1) . 'T'
@@ -44,7 +44,7 @@ function! TabLine()
 
     if m > 0
       "let s .= '[' . m . '+]'
-      let s.= '+ '
+      let s .= '%#' . s:modgrp . '#+ %#' . s:grp . '#'
     endif
 
     if n == ''
@@ -59,7 +59,7 @@ function! TabLine()
   let s .= '%#TabLineFill#%T'
 
   if tabpagenr('$') > 1
-    let s .= '%=%#TabLine#%999XX'
+    let s .= '%=%#TabLineClose#%999XX'
   endif
 
   return s
