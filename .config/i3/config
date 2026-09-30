@@ -89,6 +89,8 @@ bindsym $mod+Mod1+$right resize grow width 1px
 bar {
   modifier $mod
   font $uifont
+  # Slightly taller than the default: reads as an instrument rail.
+  height 26
 
   status_command while $status; do sleep 0.5; done
 
@@ -126,17 +128,36 @@ for_window [class=$switcher_class] floating enable
 mouse_warping output
 
 #
+# Layout
+#
+
+# A little breathing room: the wallpaper shows between windows and the rounded
+# window corners have somewhere to sit.  These two lines are the whole dial.
+gaps inner 6
+gaps outer 8
+
+#
 # Processes
 #
 
 exec --no-startup-id "/usr/libexec/polkit-gnome-authentication-agent-1 &"
 exec --no-startup-id "pipewire & pipewire-pulse & wireplumber &"
 exec --no-startup-id ~/.local/bin/dbus-sync-activation-env
-exec --no-startup-id gnome-keyring-daemon --start --components=secrets,ssh
+# The keyring daemon and its ssh-agent are started by PAM (pam_gnome_keyring's
+# "auto_start") before i3 runs at all, and PAM is the only thing that can hand
+# the daemon the login password -- which is what lets the login keyring unlock
+# itself instead of prompting.  Starting a second daemon here can end up owning
+# org.freedesktop.secrets with an instance that never got that password, so only
+# start one if PAM somehow did not.  The control socket is the tell.
+exec --no-startup-id [ -S "$XDG_RUNTIME_DIR/keyring/control" ] || gnome-keyring-daemon --start --components=secrets,ssh
 exec --no-startup-id ~/.local/bin/keyring-add-ssh-keys
 exec --no-startup-id xautolock -time 10 -locker "~/.local/bin/lock" -detectsleep
 exec --no-startup-id /usr/libexec/xdg-desktop-portal-gtk
+exec_always --no-startup-id ~/.local/bin/picom-start
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
+# The bar is the built-in i3bar, with rounded corners supplied by picom.
+# polybar is intentionally not started here.
+# exec_always --no-startup-id ~/.local/bin/polybar-start
 
 #
 # Font

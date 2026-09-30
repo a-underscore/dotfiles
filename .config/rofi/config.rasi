@@ -18,11 +18,17 @@ configuration {
     txt: 			 #ffffff;
     cyan:                  	 #008080;
     unfocused:                   #333333;
-    inactive:                  	 #666666;
-    bg:                  	 #121212;
+    inactive:                    #666666;
+    bg:                          #121212;
     thickness:              	 4px;
     thicknessmargin:             0 0 2px 0;
     background: 		 var(bg);
+    /* Matches picom's corner-radius (see ~/.config/picom/picom.conf) so the
+       compositor cut falls on the shape drawn here instead of clipping it.
+       radiusinner = radius - thickness keeps the rows concentric with the
+       window's inner curve. */
+    radius:                     10px;
+    radiusinner:                 6px;
 }
 #scrollbar {
 	width: var(thickness);
@@ -35,6 +41,7 @@ element {
     margin: var(thicknessmargin);
     padding: var(thickness);
     border:  0;
+    border-radius: var(radiusinner);
 }
 element normal.normal {
     background-color: var(unfocused);
@@ -86,6 +93,7 @@ window {
     margin:           0;
     border-color:     var(cyan);
     border:           var(thickness);
+    border-radius:    var(radius);
 }
 mainbox {
     padding: var(thickness);
@@ -99,6 +107,7 @@ message {
 textbox {
     background-color: var(inactive);
     text-color: var(txt);
+    border-radius: var(radiusinner);
 }
 listview {
     scrollbar:    true;
@@ -115,6 +124,7 @@ button {
 button selected {
     background-color: var(cyan);
     text-color:       var(txt);
+    border-radius: var(radiusinner);
 }
 num-filteurgent-rows {
     expand:     false;
