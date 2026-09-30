@@ -1,0 +1,30 @@
+#!/bin/sh
+# Start the i3 status bar (polybar), unless it is already running.
+#
+# The flock is what makes this idempotent, so i3 runs it as
+#   exec_always --no-startup-id ~/.local/bin/polybar-start
+# and a reload (i3-msg restart) can never spawn a second bar: the running
+# polybar holds the lock, so this exits straight away.
+#
+# NOTE: never run this from a terminal - `flock -n FILE cmd` runs cmd in the
+# FOREGROUND, so the shell blocks until polybar exits (same trap as
+# picom-start).  Start it detached instead:
+#   setsid ~/.local/bin/polybar-start >/dev/null 2>&1 </dev/null & disown
+#
+# After editing ~/.config/polybar/config.ini use
+#   polybar-msg cmd restart
+# (the bar sets enable-ipc = true).  If the workspace chips ever stop updating
+# after an i3 restart, the same command reconnects the i3 module.
+
+# The network module is pointed at the interface that carries the default
+# route, so the bar follows whatever link is actually up rather than a
+# hardcoded interface name.  Empty when there is no default route; the module
+# falls back to enp3s0 in that case.
+POLYBAR_NET_IF=$(ip route show default 2>/dev/null | awk '{print $5; exit}')
+export POLYBAR_NET_IF
+
+# polybar has no --log-file option, so stderr goes to the log by hand.
+# --reload makes it re-read the config when that file is modified.
+exec flock -n "$XDG_RUNTIME_DIR/polybar.lock" \
+  polybar --config="$HOME/.config/polybar/config.ini" --reload --log=warning main \
+  2>>"$XDG_RUNTIME_DIR/polybar.log"

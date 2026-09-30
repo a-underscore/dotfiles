@@ -1,0 +1,37 @@
+#!/bin/sh
+# Push this session's environment into the D-Bus session bus "activation
+# environment".
+#
+# Why this is needed:
+#   Services started by D-Bus activation inherit the environment of the *bus
+#   daemon*, not of the application that triggered them. The bus daemon is
+#   started once, at session start, so problems in its environment are invisible
+#   in every shell but hit activated services.
+#
+#   On this machine that caused xdg-desktop-portal to abort on startup:
+#       GLib-GIO-ERROR: No GSettings schemas are installed on the system
+#   because GSettings finds schemas through XDG_DATA_DIRS, which the bus daemon
+#   had inherited with /usr/share missing. The portal then died with SIGABRT and
+#   nothing that needs a portal (file choosers, settings, screenshots) worked.
+#
+#   Running this at session start keeps the activated services' environment in
+#   sync with the real session environment.
+#
+# Referenced from ~/.config/i3/config.
+
+set -u
+
+dict=""
+for var in XDG_DATA_DIRS XDG_CONFIG_DIRS XDG_CURRENT_DESKTOP; do
+    value=$(printenv "$var" 2>/dev/null) || value=""
+    [ -n "$value" ] || continue
+    dict="${dict}${dict:+,}${var},\"${value}\""
+done
+
+[ -n "$dict" ] || exit 0
+
+dbus-send --session --print-reply --dest=org.freedesktop.DBus \
+    /org/freedesktop/DBus org.freedesktop.DBus.UpdateActivationEnvironment \
+    "dict:string:string:${dict}" >/dev/null 2>&1 || true
+
+exit 0

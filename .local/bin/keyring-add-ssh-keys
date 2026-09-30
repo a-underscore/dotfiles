@@ -1,0 +1,45 @@
+#!/bin/sh
+# Load SSH keys into the session SSH agent provided by gnome-keyring.
+#
+# The agent socket lives at "$XDG_RUNTIME_DIR/keyring/ssh" and only appears
+# once gnome-keyring-daemon has started, so this waits briefly for it.
+# Referenced from ~/.config/i3/config right after the keyring is started.
+#
+# Keys that are passphrase-protected are skipped on purpose: this runs as a
+# window-manager autostart, where a blocking ssh-add prompt has no terminal
+# and would hang. Add those manually with `ssh-add` when you need them.
+
+set -u
+
+sock="${SSH_AUTH_SOCK:-${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/keyring/ssh}"
+
+# Wait up to ~10s for gnome-keyring to create the agent socket.
+i=0
+while [ ! -S "$sock" ] && [ "$i" -lt 40 ]; do
+    sleep 0.25
+    i=$((i + 1))
+done
+
+if [ ! -S "$sock" ]; then
+    echo "keyring-add-ssh-keys: no SSH agent socket at $sock" >&2
+    exit 1
+fi
+
+export SSH_AUTH_SOCK="$sock"
+
+for key in "$HOME"/.ssh/id_* "$HOME"/.ssh/*_ed25519 "$HOME"/.ssh/*_rsa; do
+    # Skip glob non-matches, public keys and anything that is not a file.
+    case "$key" in
+        *.pub) continue ;;
+    esac
+    [ -f "$key" ] || continue
+
+    # Only auto-add keys that need no passphrase (see note above).
+    if ! ssh-keygen -y -P '' -f "$key" </dev/null >/dev/null 2>&1; then
+        continue
+    fi
+
+    ssh-add "$key" >/dev/null 2>&1 || true
+done
+
+exit 0

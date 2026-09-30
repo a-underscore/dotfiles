@@ -1,0 +1,13 @@
+#!/bin/sh
+# Start picom for this X session.
+#
+# Safe to run repeatedly (i3 uses exec_always for it): flock makes extra
+# invocations no-ops while an instance is alive, and releases automatically
+# when picom exits, so an i3 reload picks up a crashed compositor.
+set -eu
+
+conf="${XDG_CONFIG_HOME:-$HOME/.config}/picom/picom.conf"
+runtime="${XDG_RUNTIME_DIR:-/tmp}"
+
+exec flock -n "$runtime/picom.lock" \
+    picom --config "$conf" --log-level warn --log-file "$runtime/picom.log"
