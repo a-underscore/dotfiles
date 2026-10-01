@@ -86,23 +86,6 @@ bindsym $mod+Mod1+$right resize grow width 1px
 # Bar
 #
 
-bar {
-  modifier $mod
-  font $uifont
-  # Slightly taller than the default: reads as an instrument rail.
-  height 26
-
-  status_command while $status; do sleep 0.5; done
-
-  colors {
-    statusline $font_color
-    background $bg_color
-    focused_workspace $primary $primary $font_color
-    active_workspace $inactive $inactive $font_color
-    inactive_workspace $unfocused $unfocused $font_color
-  }
-}
-
 #
 # Display
 #
@@ -155,9 +138,8 @@ exec --no-startup-id xautolock -time 10 -locker "~/.local/bin/lock" -detectsleep
 exec --no-startup-id /usr/libexec/xdg-desktop-portal-gtk
 exec_always --no-startup-id ~/.local/bin/picom-start
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
-# The bar is the built-in i3bar, with rounded corners supplied by picom.
-# polybar is intentionally not started here.
-# exec_always --no-startup-id ~/.local/bin/polybar-start
+# Launch the polybar status bar instead of i3bar.
+exec_always --no-startup-id ~/.local/bin/polybar-start
 
 #
 # Font
