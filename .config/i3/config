@@ -6,7 +6,7 @@ set $uifont pango:RobotoMono 12
 set $thickness 4
 set $bg_color #121212
 set $font_color #ffffff
-set $primary #008080
+set $primary #f5f5f5
 set $unfocused #333333
 set $inactive #666666
 set $urgent #ff0000
@@ -99,11 +99,11 @@ include ~/.config/i3/workspaces.conf
 # Windows
 #
 
-client.focused $primary $primary $font_color $primary
+client.focused $primary $primary #000000 $primary
 client.unfocused $unfocused $unfocused $font_color $unfocused
 client.focused_inactive $inactive $inactive $font_color $inactive
 client.urgent $urgent $urgent $font_color $urgent
-client.placeholder $primary $primary $font_color $font_color $primary
+client.placeholder $primary $primary #000000 #000000 $primary
 
 for_window [class=".*"] border normal $thickness, title_format "[ %title ]", title_window_icon yes
 for_window [class=$switcher_class] floating enable
@@ -114,8 +114,10 @@ mouse_warping output
 # Layout
 #
 
-# A little breathing room: the wallpaper shows between windows and the rounded
-# window corners have somewhere to sit.  These two lines are the whole dial.
+# A little breathing room: the wallpaper shows between windows and the shadows
+# the compositor draws have somewhere to sit.  These two lines are the whole
+# dial.  (picom used to round the window corners into these gaps as well;
+# xcompmgr cannot - see ~/.local/bin/xcompmgr-start.)
 gaps inner 6
 gaps outer 8
 
@@ -126,16 +128,32 @@ gaps outer 8
 exec --no-startup-id "/usr/libexec/polkit-gnome-authentication-agent-1 &"
 exec --no-startup-id "pipewire & pipewire-pulse & wireplumber &"
 exec --no-startup-id ~/.local/bin/dbus-sync-activation-env
-# The keyring daemon and its ssh-agent are started by PAM (pam_gnome_keyring's
-# "auto_start") before i3 runs at all, and PAM is the only thing that can hand
-# the daemon the login password -- which is what lets the login keyring unlock
-# itself instead of prompting.  Starting a second daemon here can end up owning
-# org.freedesktop.secrets with an instance that never got that password, so only
-# start one if PAM somehow did not.  The control socket is the tell.
-exec --no-startup-id [ -S "$XDG_RUNTIME_DIR/keyring/control" ] || gnome-keyring-daemon --start --components=secrets,ssh
+# The secrets daemon is started by PAM (pam_gnome_keyring's "auto_start") before
+# i3 runs, and PAM is the only thing that can hand it the login password -- which
+# is what lets the login keyring unlock itself instead of prompting.  Do NOT start
+# a second daemon here: an instance that never got that password would own
+# org.freedesktop.secrets and pop up "Unlock Keyring".
+#
+# PAM's --login invocation starts the secrets component but not the ssh-agent one,
+# so ask the *already running* daemon to add ssh.  "gnome-keyring-daemon --start"
+# initializes an existing daemon (it does not spawn a second one), which is why
+# there is no --foreground here: --foreground makes it hang instead of handing off.
+# If no daemon exists at all (PAM failed), --start brings one up with both components.
+exec --no-startup-id [ -S "$XDG_RUNTIME_DIR/keyring/ssh" ] || gnome-keyring-daemon --start --components=secrets,ssh
 exec --no-startup-id ~/.local/bin/keyring-add-ssh-keys
 exec --no-startup-id xautolock -time 10 -locker "~/.local/bin/lock" -detectsleep
 exec --no-startup-id /usr/libexec/xdg-desktop-portal-gtk
+# Compositor.  picom on the *xrender* backend: this X server has no GL
+# acceleration (xf86-video-nouveau cannot drive NV194 and glamor refuses
+# llvmpipe), so the glx backend composites the whole desktop on the CPU at
+# ~780% CPU, while xrender uses the server's own pixman path at ~1% CPU.
+#
+# picom rather than xcompmgr specifically because of corner-radius: xcompmgr
+# has no rounded-corner option at all (its -r is the shadow blur radius), so
+# switching to it silently squared off every window.  picom rounds corners on
+# both backends (xrender uses a cached corner mask, glx a fragment shader), so
+# nothing is lost by dropping glx.
+# See ~/.config/picom/picom.conf.
 exec_always --no-startup-id ~/.local/bin/picom-start
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 # Launch the polybar status bar instead of i3bar.

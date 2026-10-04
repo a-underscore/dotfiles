@@ -42,8 +42,8 @@
 
     horizontal_padding = 4
 
-    # 4px teal accent line between summary and body.
-    separator_color = "#008080"
+    # 4px white accent line between summary and body.
+    separator_color = "#ffffff"
 
     startup_notification = false
 
@@ -64,7 +64,7 @@
     timeout = 10
 
 [urgency_normal]
-    frame_color = "#008080"
+    frame_color = "#ffffff"
     timeout = 10
 
 [urgency_critical]

@@ -15,7 +15,7 @@
 -- faint decoration groups (NonText, EndOfBuffer, Whitespace, separators).
 --
 -- Optional overrides, set in init.vim *before* :colorscheme:
---   vim.g.theme2_accent      = "teal" (default) | "cyan" | "#rrggbb"
+--   vim.g.theme2_accent      = "white" (default) | "cyan" | "#rrggbb"
 --   vim.g.theme2_italic      = 0    -- no italics anywhere
 --   vim.g.theme2_monochrome  = 1    -- flatten syntax accents back to grey
 --   vim.g.theme2_transparent = 1    -- leave Normal's bg unset
@@ -43,12 +43,12 @@ local shadow      = opt("theme2_shadow", true)
 -- ── Accent presets ───────────────────────────────────────────────────────────
 -- Accent-derived tints are part of the preset so selections stay in key.
 local ACCENTS = {
-  teal = { -- default: softened teal, ~8.5:1 on the base bg
-    accent = { "#4db6ac", 73 },
-    bright = { "#6fd3c7", 79 },
-    sel    = { "#26403d", 23 },
-    match  = { "#2d4b47", 23 },
-    search = { "#3a5f5a", 23 },
+  white = { -- default: crisp white accent, ~13:1 on the base bg
+    accent = { "#f5f5f5", 255 },
+    bright = { "#f5f5f5", 231 },
+    sel    = { "#3a3a3a", 237 },
+    match  = { "#4a4a4a", 238 },
+    search = { "#5a5a5a", 240 },
   },
   cyan = { -- the original cterm-6 cyan accent, ~9.5:1
     accent = { "#00cdcd", 44 },
@@ -62,7 +62,7 @@ local ACCENTS = {
 local function pick_accent()
   local want = vim.g.theme2_accent
   if want == nil or want == "" then
-    return ACCENTS.teal
+    return ACCENTS.white
   end
   for name, preset in pairs(ACCENTS) do
     if want == name then
@@ -71,7 +71,7 @@ local function pick_accent()
   end
   -- Raw hex given: derive the tints by hand from the accent itself.
   if type(want) == "string" and want:match("^#%x%x%x%x%x%x$") then
-    local c = ACCENTS.teal
+    local c = ACCENTS.white
     return {
       accent = { want, 73 },
       bright = c.bright,
@@ -80,7 +80,7 @@ local function pick_accent()
       search = c.search,
     }
   end
-  return ACCENTS.teal
+  return ACCENTS.white
 end
 
 local A = pick_accent()
@@ -127,7 +127,7 @@ local c = {
   sbar       = { "#232323", 235 }, -- Pmenu scrollbar
   thumb      = { "#3d3d3d", 237 }, -- Pmenu scrollbar thumb
   black      = { "#000000", 16  },
-  white      = { "#ffffff", 231 },
+  white      = { "#f5f5f5", 231 },
 }
 
 local title = { fg = c.fg_strong, bold = true }

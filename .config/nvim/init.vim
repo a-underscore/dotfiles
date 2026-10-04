@@ -3,7 +3,7 @@ source ~/.config/nvim/tabline.vim
 
 " ── Appearance ──────────────────────────────────────────────────────────────
 " Without termguicolors Neovim ignores theme2's hex palette and renders the
-" 256-colour cterm approximations instead (the accent came out bright cyan).
+" 256-colour cterm approximations instead (the accent came out bright white).
 if has('termguicolors') && !has('gui_running')
   if get(g:, 'theme2_truecolor', $COLORTERM =~# '\v^(truecolor|24bit)$' || $TERM =~# 'direct')
     set termguicolors
@@ -48,7 +48,7 @@ lua << EOF
     },
     window = {
       -- Bordered popups: keep them on Normal/Float surfaces with a visible
-      -- FloatBorder, and use the theme's teal selection for the chosen item.
+      -- FloatBorder, and use the theme's white selection for the chosen item.
       completion = cmp.config.window.bordered({
         winhighlight = 'Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:Visual,Search:None',
       }),
