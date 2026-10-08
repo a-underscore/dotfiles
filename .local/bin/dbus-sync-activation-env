@@ -17,12 +17,18 @@
 #   Running this at session start keeps the activated services' environment in
 #   sync with the real session environment.
 #
+#   DISPLAY and XAUTHORITY are pushed too.  D-Bus-activated GTK services --
+#   notably the xdg-desktop-portal-gtk backend -- must be able to open the X
+#   display, but the bus daemon itself was started at login (before startx) and
+#   has no DISPLAY; without this, activation dies with "cannot open display".
+#   See also ~/.local/bin/xdg-portals-start.
+#
 # Referenced from ~/.config/i3/config.
 
 set -u
 
 dict=""
-for var in XDG_DATA_DIRS XDG_CONFIG_DIRS XDG_CURRENT_DESKTOP; do
+for var in XDG_DATA_DIRS XDG_CONFIG_DIRS XDG_CURRENT_DESKTOP DISPLAY XAUTHORITY; do
     value=$(printenv "$var" 2>/dev/null) || value=""
     [ -n "$value" ] || continue
     dict="${dict}${dict:+,}${var},\"${value}\""

@@ -142,7 +142,15 @@ exec --no-startup-id ~/.local/bin/dbus-sync-activation-env
 exec --no-startup-id [ -S "$XDG_RUNTIME_DIR/keyring/ssh" ] || gnome-keyring-daemon --start --components=secrets,ssh
 exec --no-startup-id ~/.local/bin/keyring-add-ssh-keys
 exec --no-startup-id xautolock -time 10 -locker "~/.local/bin/lock" -detectsleep
-exec --no-startup-id /usr/libexec/xdg-desktop-portal-gtk
+# xdg-desktop-portal: the frontend is started at login (before X) by the OpenRC
+# user service, so it never sees the GTK backend -- D-Bus activation of the
+# backend needs a DISPLAY the bus daemon does not have -- and therefore exports
+# no FileChooser/OpenURI/Settings/Notification/Print.  As a result sandboxed apps
+# (e.g. the OrcaSlicer flatpak) get no working file chooser, cannot open links in
+# the host browser and receive no desktop settings.  This helper starts the
+# backend and restarts the frontend once it is up.
+# See ~/.local/bin/xdg-portals-start.
+exec --no-startup-id ~/.local/bin/xdg-portals-start
 # Compositor.  picom on the *xrender* backend: this X server has no GL
 # acceleration (xf86-video-nouveau cannot drive NV194 and glamor refuses
 # llvmpipe), so the glx backend composites the whole desktop on the CPU at
