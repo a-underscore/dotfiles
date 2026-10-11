@@ -11,7 +11,7 @@ configuration {
 	kb-accept-custom: "Shift+Return";
 	kb-accept-custom-alt: "Control+Shift+Return";
 	kb-remove-char-back: "BackSpace";
-	terminal: "alacritty";
+	terminal: "kitty";
 }
 * {
     urgent:                      #ff0000;
