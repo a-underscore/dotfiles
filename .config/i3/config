@@ -114,10 +114,11 @@ mouse_warping output
 # Layout
 #
 
-# A little breathing room: the wallpaper shows between windows and the shadows
-# the compositor draws have somewhere to sit.  These two lines are the whole
-# dial.  (picom used to round the window corners into these gaps as well;
-# xcompmgr cannot - see ~/.local/bin/xcompmgr-start.)
+# A little breathing room: the wallpaper shows between windows.  These two
+# lines are the whole dial.  (picom used to round the window corners into these
+# gaps as well; xcompmgr cannot - see ~/.local/bin/xcompmgr-start.)
+# Shadows are off in ~/.config/picom/picom.conf, so the gaps exist purely for
+# the visual breather, not to give a shadow somewhere to sit.
 gaps inner 6
 gaps outer 8
 
